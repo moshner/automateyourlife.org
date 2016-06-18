@@ -1,6 +1,6 @@
 collections:
   projects:
-    output: false
+    output: true
     id: ""
     title: ""
     url: ""
@@ -8,6 +8,7 @@ collections:
     solution: ""
     image: ""
     tags: []
+    permalink: /projects/:path/
 
 asset_path: "assets/"
 image_path: "assets/images/"
@@ -16,5 +17,11 @@ defaults:
   -
     scope:
       path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: projects
     values:
       layout: "default"
