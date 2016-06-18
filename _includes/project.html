@@ -1,0 +1,18 @@
+{% assign project = include.project %}
+<div class="media" id="{{ project.id }}">
+{% if project.image != "" %}
+    <div class="media-left">
+        {% if project.url != "" %}<a href="{{ project.url }}">{% endif %}
+            <img src="{{ site.image_path }}{{ project.image }}" width="72" height="108" alt="project icon">
+        {% if project.url != "" %}</a>{% endif %}
+    </div>
+{% endif %}
+    <div class="media-body">
+        <h3 class="media-heading">{% if project.url != "" %}<a href="{{ project.url }}">{% endif %}{{ project.title }}{% if project.url != "" %}</a>{% endif %}</h3>
+        <p class="description">
+            <strong>Problem</strong>: {{ project.problem }}<br />
+            <strong>Solution</strong>: {{ project.solution }}
+        </p>
+        <p class="categories">{% for tag_id in project.tags %}{% assign tag = site.data.tags[tag_id] %}<span>{{ tag.text }}</span>{% if !forloop.last %}, {% endif %}{% endfor %}</p>
+    </div>
+</div>

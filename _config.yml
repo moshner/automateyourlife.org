@@ -1,5 +1,16 @@
 collections:
-  - projects
+  projects:
+    output: false
+    id: ""
+    title: ""
+    url: ""
+    problem: ""
+    solution: ""
+    image: ""
+    tags: []
+
+asset_path: "assets/"
+image_path: "assets/images/"
 
 defaults:
   -

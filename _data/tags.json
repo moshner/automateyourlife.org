@@ -1,0 +1,23 @@
+{
+    "ifttt": {
+        "text": "IFTTT"
+    },
+    "tasker": {
+        "text": "Tasker"
+    },
+    "android": {
+        "text": "Android"
+    },
+    "join": {
+        "text": "Join by joaoapps"
+    },
+    "pebble": {
+        "text": "Pebble"
+    },
+    "pebble-tasker": {
+        "text": "Pebble Tasker"
+    },
+    "gmail": {
+        "text": "Gmail"
+    }
+}

@@ -3,7 +3,7 @@
 
 <div class="cover-container">
     <div class="mega-image">
-        <img class="img-responsive" src="assets/images/automate-your-life@1x.png" />
+        <img class="img-responsive" src="assets/images/automate-your-life@1x.png" alt="Automate your life">
     </div>
     <div class="inner cover">
         <h1 class="cover-heading">Automate Your Life with Android and IFTTT</h1>
@@ -12,43 +12,5 @@
 </div>
 <div class="projects">
     <h2>Projects</h2>
-    <div class="media" id="FindYourPhoneWithTasker">
-        <div class="media-left">
-            <a href="https://github.com/moshner/FindYourPhoneWithTasker">
-                <img src="assets/images/icon-phone-search.png" width="72" height="108" />
-            </a>
-        </div>
-        <div class="media-body">
-            <h3 class="media-heading"><a href="https://github.com/moshner/FindYourPhoneWithTasker">Find Your Phone with Tasker</a></h3>
-            <p class="description"><strong>Problem</strong>: I frequently misplace my phone and have no phone with which to call it.<br />
-                <strong>Solution</strong>: Trigger a sound effect on the phone remotely from my watch, email, or web browser.</p>
-            <p class="categories">Android, Tasker, Join by joaoapps, Pebble, Pebble Tasker, IFTTT, Gmail</p>
-        </div>
-    </div>
-    <div class="media" id="TrackMedicineWithIFTTT">
-        <div class="media-left">
-            <a href="https://github.com/moshner/TrackMedicineWithIFTTT">
-                <img src="assets/images/icon-phone-medicine.png" width="72" height="108" />
-            </a>
-        </div>
-        <div class="media-body">
-            <h3 class="media-heading"><a href="https://github.com/moshner/TrackMedicineWithIFTTT">Track Medicine Intake with IFTTT</a></h3>
-            <p class="description"><strong>Problem</strong>: It's hard to remember if I've taken my medication.<br />
-                <strong>Solution</strong>: Log medicine intake on a spreadsheet right when it is taken.</p>
-            <p class="categories">IFTTT</p>
-        </div>
-    </div>
-    <div class="media" id="MuteAndroidWithTasker">
-        <div class="media-left">
-            <a href="https://github.com/moshner/MuteAndroidWithTasker">
-                <img src="assets/images/icon-phone-mute.png" width="72" height="108" />
-            </a>
-        </div>
-        <div class="media-body">
-            <h3 class="media-heading"><a href="https://github.com/moshner/MuteAndroidWithTasker">Mute Android with Tasker</a></h3>
-            <p class="description"><strong>Problem</strong>: I forget to mute my phone in meetings sometimes.<br />
-                <strong>Solution</strong>: Mute my phone automatically by the simple act of turning it upside down on the table.</p>
-            <p class="categories">Android, Tasker</p>
-        </div>
-    </div>
+    {% for p in site.projects %}{% include project.html project=p %}{% endfor %}
 </div>
