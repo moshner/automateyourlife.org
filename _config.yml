@@ -13,6 +13,8 @@ collections:
 
 asset_path: "/assets/"
 image_path: "/assets/images/"
+script_path: "/assets/scripts/"
+style_path: "/assets/styles/"
 
 defaults:
   -
