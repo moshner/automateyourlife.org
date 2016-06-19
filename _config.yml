@@ -1,6 +1,7 @@
 collections:
   projects:
     output: true
+    permalink: /projects/:path/
     id: ""
     title: ""
     url: ""
@@ -24,4 +25,4 @@ defaults:
       path: ""
       type: projects
     values:
-      layout: "default"
+      layout: "project"
