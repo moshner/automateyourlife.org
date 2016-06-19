@@ -11,8 +11,8 @@ collections:
     tags: []
     permalink: /projects/:path/
 
-asset_path: "assets/"
-image_path: "assets/images/"
+asset_path: "/assets/"
+image_path: "/assets/images/"
 
 defaults:
   -
