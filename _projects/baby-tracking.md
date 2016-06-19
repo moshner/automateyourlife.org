@@ -5,7 +5,7 @@ url: "#"
 problem: "Remembering the last sleep, changing, or feeding is hard, especially when sleep deprived."
 solution: "Using Tasker and your phone you can track sleep, changings, and feedings."
 image: "icon-phone-baby.png"
-tags: ["android", "tasker", "AutoRemote", "ifttt", "google drive"]
+tags: ["android", "tasker", "autoremote", "ifttt", "google drive"]
 ---
 
 Overview
