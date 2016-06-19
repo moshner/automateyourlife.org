@@ -1,5 +1,7 @@
 {% include layout/header.html %}
 
+<h2>{{ page.title }}</h2>
+
 {% if page.image != "" %}<img src="{{ site.image_path }}{{ page.image }}" width="72" height="108" title="project icon">{% endif %}
 
 <p><strong>Problem:</strong> {{ page.problem }}</p>
