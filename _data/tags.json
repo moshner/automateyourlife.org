@@ -19,5 +19,12 @@
     },
     "gmail": {
         "text": "Gmail"
+    },
+    "autoremote": {
+        "text": "AutoRemote"
+    },
+    "google drive": {
+    }
+        "text": "Google Drive"
     }
 }
