@@ -1,8 +1,10 @@
 {% include layout/header.html %}
 {% include layout/navbar.html %}
 
-{% if page.title != "" %}<h2>{{ page.title }}</h2>{% endif %}
+<div class="container-fluid">
+    {% if page.title != "" %}<h2>{{ page.title }}</h2>{% endif %}
 
-{{ content }}
+    {{ content }}
+</div>
 
 {% include layout/footer.html %}

@@ -1,16 +1,18 @@
 {% include layout/header.html %}
 {% include layout/navbar.html %}
 
-<h2>{{ page.title }}</h2>
+<div class="container-fluid">
+    <h2>{{ page.title }}</h2>
 
-{% if page.image != "" %}<img src="{{ site.image_path }}{{ page.image }}" width="72" height="108" title="project icon">{% endif %}
+    {% if page.image != "" %}<img src="{{ site.image_path }}{{ page.image }}" width="72" height="108" title="project icon">{% endif %}
 
-<p><strong>Problem:</strong> {{ page.problem }}</p>
+    <p><strong>Problem:</strong> {{ page.problem }}</p>
 
-<p><strong>Solution:</strong> {{ page.solution }}</p>
+    <p><strong>Solution:</strong> {{ page.solution }}</p>
 
-<hr>
+    <hr>
 
-{{ content }}
+    {{ content }}
+</div>
 
 {% include layout/footer.html %}

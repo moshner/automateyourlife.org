@@ -1,6 +1,7 @@
 body {
     background-color: #4fa1dc;
     color: white;
+    padding-top: 70px;
 }
 a {
     color: white;
@@ -12,8 +13,7 @@ a {
 .panel a {
     color: #4fa1dc;
 }
-.site-wrapper {
-    margin: 0 auto;
+.container, .container-fluid {
     max-width: 980px;
 }
 .nav {
