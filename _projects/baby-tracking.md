@@ -1,11 +1,10 @@
 ---
 id: "BabyTracking"
-title: "Traking Your Baby's Body Rhythms with Tasker and IFTTT"
-url: "#"
+title: "Tracking Your Baby's Body Rhythms with Tasker and IFTTT"
 problem: "Remembering the last sleep, changing, or feeding is hard, especially when sleep deprived."
 solution: "Using Tasker and your phone you can track sleep, changings, and feedings."
 image: "icon-phone-baby.png"
-tags: ["android", "tasker", "autoremote", "ifttt", "google drive"]
+tags: ["android", "tasker", "autoremote", "ifttt", "google-drive"]
 ---
 
 Overview
@@ -28,7 +27,7 @@ The goal here is to create two tasks. The first "Baby Sleep" task creates a time
 2. Create the first action as a Variable Set. Name: %BSleepDuration to: %Time - %BSleepStart. Make sure it to check the "Do Maths" box.
 3. Create a Notify Cancel action to cancel the title: "Sleep From %BSleepStart" notification.
 4. Create an AutoRemote Message with the Recipient of IFTTT. Set the Message: `sleep=:=%BSleepDuration=:=KidName`
-5. Go into IFTTT and set up an action to accept that AutoRemote notification. 
+5. Go into IFTTT and set up an action to accept that AutoRemote notification.
 6. Set THIS to "Maker" channel to the "Event Name" of "sleep"
 7. Set THIS to "Google Drive" channel. Give it a spreadsheet and the "Format Row" of `{{OccurredAt}} ||| {{Value1}} |||{{Value2}}`
 
@@ -39,7 +38,7 @@ Now we should be ready to add the baby sleep task.
 2. Create the first action as a Notify Cancel. Set the title to "Sleep From %BSleepStart"
 3. Create an action to "Variable Set". Name: %BSleepStart value: %Time
 4. Create an action to create a notification with the Title of "Sleep From %BSleepStart" (no quotes.) Give it an icon and two actions (listed below)
-5. In your notification create an action and name it "Restart". Make it reset your %BSleepStart variable to the current time. 
+5. In your notification create an action and name it "Restart". Make it reset your %BSleepStart variable to the current time.
 6. In your notification action create  another sub-action and name it "Awake". Make it perform the task "Baby Awake".
 
 Known issue: How can we make sure to calculate correctly over a day change?
@@ -69,7 +68,7 @@ This task, when launched from a button on your home screen will ask you what typ
 2. Create an action Popup Task Buttons. Set the Text to "What Type?" with the tasks of Pee, Poo, and Both.
 
 ##Part 3) Baby Fed
-This part is only one task that notifies you of the last feeding and creates a time stamp on a spreadsheet to track the feedings. It could be expanded to accept values if you want to track in the amount of food eaten. 
+This part is only one task that notifies you of the last feeding and creates a time stamp on a spreadsheet to track the feedings. It could be expanded to accept values if you want to track in the amount of food eaten.
 
 1. Create a task and call it "Baby Fed"
 2. Add an action to Notify Cancel with the title of "Last Feeding %BFed".
@@ -77,4 +76,4 @@ This part is only one task that notifies you of the last feeding and creates a t
 4. Add an action to Notify with the title of "Last Feeding %BFed".
 2. Create an AutoRemote Message with the Recipient of IFTTT. Set the Message: `fed=:=KidName`
 6. Set THIS to "Maker" channel to the "Event Name" of "fed"
-7. Set THIS to "Google Drive" channel. Give it a spreadsheet and the "Format Row" of `{{OccurredAt}} ||| {{Value1}}`
+7. Set THIS to "Google Drive" channel. Give it a spreadsheet and the "Format Row" of `{% raw %}{{OccurredAt}} ||| {{Value1}}{% endraw %}`

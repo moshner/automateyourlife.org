@@ -12,5 +12,6 @@
 </div>
 <div class="projects">
     <h2>Projects</h2>
-    {% for p in site.projects %}{% include project.html project=p %}{% endfor %}
+    {% assign list = site.projects | sort: 'title' %}
+    {% for p in list %}{% include project.html project=p %}{% endfor %}
 </div>
