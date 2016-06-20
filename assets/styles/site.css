@@ -23,3 +23,6 @@ a {
 .mega-image {
     text-align: center;
 }
+footer .navbar-text {
+    float: none;
+}
