@@ -23,12 +23,3 @@ a {
 .mega-image {
     text-align: center;
 }
-.footer {
-    background-color: #333;
-    padding: 2em 0;
-    margin: 100px 0 0 0;
-    text-align: center;
-}
-.footer a:hover {
-    color: #aaa;
-}
