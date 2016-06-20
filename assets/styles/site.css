@@ -8,6 +8,9 @@ body {
     padding-top: 70px;
     margin-bottom: 60px;
 }
+body.home {
+    padding-top: 0;
+}
 body > footer.navbar {
     border-radius: 0;
     border-bottom-width: 0;
