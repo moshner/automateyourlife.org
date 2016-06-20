@@ -1,0 +1,6 @@
+---
+title: "Projects"
+---
+
+{% assign list = site.projects | sort: 'title' %}
+{% for p in list %}{% include project.html project=p %}{% endfor %}

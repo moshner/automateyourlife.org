@@ -1,12 +1,12 @@
 {% assign project = include.project %}
 <div class="media" id="{{ project.id }}">
-{% if project.image != "" %}
+    {% if project.image != "" %}
     <div class="media-left">
         {% if project.url != "" %}<a href="{{ project.url }}">{% endif %}
             <img src="{{ site.image_path }}{{ project.image }}" width="72" height="108" alt="project icon">
-        {% if project.url != "" %}</a>{% endif %}
+            {% if project.url != "" %}</a>{% endif %}
     </div>
-{% endif %}
+    {% endif %}
     <div class="media-body">
         <h3 class="media-heading">{% if project.url != "" %}<a href="{{ project.url }}">{% endif %}{{ project.title }}{% if project.url != "" %}</a>{% endif %}</h3>
         <p class="description">
