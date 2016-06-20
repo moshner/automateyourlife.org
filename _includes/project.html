@@ -13,6 +13,6 @@
             <strong>Problem</strong>: {{ project.problem }}<br />
             <strong>Solution</strong>: {{ project.solution }}
         </p>
-        <p class="categories">{% for tag_id in project.tags %}{% assign tag = site.data.tags[tag_id] %}<span>{{ tag.text }}</span>{% if forloop.last != true %}, {% endif %}{% endfor %}</p>
+        <p class="categories">{% for tag_id in project.tags %}{% assign tag = site.data.tags[tag_id] %}<span class="label label-default">{{ tag.text }}</span>{% if forloop.last != true %} {% endif %}{% endfor %}</p>
     </div>
 </div>
