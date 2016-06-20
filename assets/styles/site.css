@@ -21,6 +21,7 @@ a {
 }
 .navbar-brand > img {
     display: inline-block;
+    margin-top: -6px;
 }
 .mega-image {
     text-align: center;
