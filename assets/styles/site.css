@@ -16,9 +16,6 @@ a {
 .container, .container-fluid {
     max-width: 980px;
 }
-.nav {
-    float: right;
-}
 .navbar-brand > img {
     display: inline-block;
     margin-top: -6px;
