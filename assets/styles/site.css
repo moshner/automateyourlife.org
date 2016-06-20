@@ -19,6 +19,9 @@ a {
 .nav {
     float: right;
 }
+.navbar-brand > img {
+    display: inline-block;
+}
 .mega-image {
     text-align: center;
 }
