@@ -5,7 +5,6 @@ html {
 body {
     background-color: #4fa1dc;
     color: white;
-    padding-top: 70px;
     margin-bottom: 60px;
     font-size: 16px;
 }
@@ -33,9 +32,25 @@ a {
 .container, .container-fluid {
     max-width: 980px;
 }
+.navbar-white {
+    background-color: white;
+    border-color: white;
+    border-radius: 0;
+}
 .navbar-brand > img {
     display: inline-block;
     margin-top: -6px;
+}
+.navbar-white .navbar-brand-link {
+    color: #4fa1dc;
+    font-size: 24px;
+    padding-left: 5px;
+    text-decoration: none;
+}
+.navbar-white .nav a {
+    color: #4fa1dc;
+    text-decoration: none;
+    
 }
 .mega-image {
     text-align: center;
