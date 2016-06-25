@@ -25,5 +25,8 @@
     },
     "google-drive": {
         "text": "Google Drive"
+    },
+    "littlebits": {
+        "text": "littleBits"
     }
 }

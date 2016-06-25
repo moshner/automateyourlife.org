@@ -7,8 +7,10 @@ collections:
     url: ""
     problem: ""
     solution: ""
+    shortdesc: ""
     image: ""
     tags: []
+    files: []
     permalink: /projects/:path/
 
 url: "//automateyourlife.org/"
