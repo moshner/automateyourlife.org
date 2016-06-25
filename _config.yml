@@ -1,19 +1,9 @@
-﻿encoding: UTF-8
+encoding: UTF-8
 
 collections:
-  projects:
-    output: true
-    permalink: /projects/:path/
-    id: ""
-    title: ""
-    url: ""
-    problem: ""
-    solution: ""
-    shortdesc: ""
-    image: ""
-    tags: []
-    files: []
-    permalink: /projects/:path/
+    projects:
+        output: true
+        permalink: /projects/:path/
 
 url: "//automateyourlife.org/"
 asset_path: "/assets/"
@@ -22,14 +12,21 @@ script_path: "/assets/scripts/"
 style_path: "/assets/styles/"
 
 defaults:
-  -
-    scope:
-      path: ""
+  - scope:
+        path: ""
     values:
-      layout: "default"
-  -
-    scope:
-      path: ""
-      type: projects
+        layout: "default"
+  - scope:
+        path: ""
+        type: projects
     values:
-      layout: "project"
+        layout: "project"
+        id: ""
+        title: ""
+        url: ""
+        problem: ""
+        solution: ""
+        shortdesc: ""
+        image: ""
+        tags: []
+        files: []

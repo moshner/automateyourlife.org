@@ -1,4 +1,4 @@
-﻿---
+---
 id: "TripWirePhoto"
 title: "Trip Wire Photo"
 shortdesc: "Set up a trip wire using a laser (or flashlight), LittleBits, IFTTT, Tasker, Join, and Google Drive."
@@ -21,16 +21,16 @@ files: ["Hi.tsk.xml"]
 
 ## C) Set up AutoRemote to receive the signal from IFTTT
 
- 1. Connect AutoRemote to IFTTT (TODO, insert link to intructions)
+ 1. Connect AutoRemote to IFTTT (TODO, insert link to instructions)
  1. Set up a Profile to trigger when that data is received.
 
 ## D) Set up Tasker Task
 
  1. Name it 'Hi' or something.
- 1. Setup action to delete a file named /DCIM/Tasker/%HiFoto
- 1. Set a variable %HiFoto to %TIMEMS (time in milliseconds)
+ 1. Setup action to delete a file named `/DCIM/Tasker/%HiFoto`
+ 1. Set a variable `%HiFoto` to `%TIMEMS` (time in milliseconds)
  1. (optional) Play a music file with the sound of a camera shutter
- 1. Take a photo with the front camera and name it %HiFoto. Optionally you can check "Discrete" to
+ 1. Take a photo with the front camera and name it `%HiFoto`. Optionally you can check "Discrete" to
  1. Send the photo to the location of your choice. Like using JOIN to push it to a specific device.
 
 ## E) Test it out

@@ -1,4 +1,4 @@
-﻿html {
+html {
     position: relative;
     min-height: 100%;
 }
@@ -50,11 +50,16 @@ a {
 .navbar-white .nav a {
     color: #4fa1dc;
     text-decoration: none;
-    
+
 }
 .mega-image {
     text-align: center;
 }
 footer .navbar-text {
     float: none;
+}
+.list-group-item.project-file-link {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

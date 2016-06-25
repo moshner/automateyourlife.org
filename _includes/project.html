@@ -1,6 +1,7 @@
-﻿{% assign project = include.project %}
+{% assign project = include.project %}
 <div class="media" id="{{ project.id }}">
     {% if project.image != "" %}
+    <!-- {% raw %}{{ project.image }}{% endraw %} == "{{ project.image }}" -->
     <div class="media-left">
         {% if project.url != "" %}<a href="{{ project.url }}">{% endif %}
             <img src="{{ site.image_path }}{{ project.image }}" width="72" height="108" alt="project icon">
@@ -9,37 +10,15 @@
     {% endif %}
     <div class="media-body">
         <h3 class="media-heading">{% if project.url != "" %}<a href="{{ project.url }}">{% endif %}{{ project.title }}{% if project.url != "" %}</a>{% endif %}</h3>
-        <div class="{% if project.files.size > 0 %}col-lg-10 col-md-9 col-sm-6 {% endif %}col-xs-12">
-            <p class="description">
-                {% if project.shortdesc != "" and project.problem == "" and project.solution == "" %}
-                {{ project.shortdesc }}
-                {% else %}
-                <strong>Problem</strong>: {{ project.problem }}<br />
-                <strong>Solution</strong>: {{ project.solution }}
-                {% endif %}
-            </p>
-            {% assign tags = project.tags | sort %}
-            <p class="categories">{% for tag_id in tags %}{% assign tag = site.data.tags[tag_id] %}<span class="label label-default">{{ tag.text }}</span>{% if forloop.last != true %}&nbsp;{% endif %}{% endfor %}</p>
-        </div>
-        {% if project.files.size > 0 %}
-        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-            <div class="panel-group" id="project-file-accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="file-list-heading">
-                    <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#project-file-accordion" href="#project-file-list" aria-expanded="true" aria-controls="project-file-list">Files</a>
-                    </h4>
-                    </div>
-                    <div id="project-file-list" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="file-list-heading">
-                        <div class="list-group">
-                            {% for file in project.files %}
-                            <a href="{{ site.url }}downloads/{{ file }}" class="list-group-item">{{ file }}</a>
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endif %}
+        <p class="description">
+            {% if project.shortdesc != "" && project.problem == "" && project.solution == "" %}
+            {{ project.shortdesc }}
+            {% else %}
+            <strong>Problem</strong>: {{ project.problem }}<br />
+            <strong>Solution</strong>: {{ project.solution }}
+            {% endif %}
+        </p>
+        {% assign tags = project.tags | sort %}
+        <p class="categories">{% for tag_id in tags %}{% assign tag = site.data.tags[tag_id] %}<span class="label label-default">{{ tag.text }}</span>{% if forloop.last != true %}&nbsp;{% endif %}{% endfor %}</p>
     </div>
 </div>

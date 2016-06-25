@@ -1,18 +1,38 @@
-﻿{% include layout/header.html %}
+{% include layout/header.html %}
 {% include layout/navbar.html %}
 
 <div class="container-fluid">
     <h2>{{ page.title }}</h2>
+    <div class="{% if page.files.size > 0 %}col-lg-8 col-sm-6 {% endif %}col-xs-12">
+        {% if page.image != "" %}<img src="{{ site.image_path }}{{ page.image }}" width="72" height="108" title="project icon">{% endif %}
 
-    {% if page.image != "" %}<img src="{{ site.image_path }}{{ page.image }}" width="72" height="108" title="project icon">{% endif %}
+        {% if project.shortdesc != "" && project.problem == "" && project.solution == "" %}
+        <p>{{ project.shortdesc }}</p>
+        {% else %}
+        <p><strong>Problem</strong>: {{ project.problem }}</p>
+        <p><strong>Solution</strong>: {{ project.solution }}</p>
+        {% endif %}
 
-    <p><strong>Problem:</strong> {{ page.problem }}</p>
+        <hr>
 
-    <p><strong>Solution:</strong> {{ page.solution }}</p>
-
-    <hr>
-
-    {{ content }}
+        {{ content }}
+    </div>
+    {% if page.files.size > 0 %}
+    <div class="col-lg-4 col-sm-6 col-xs-12">
+        <div class="panel-group" id="project-file-accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab">
+                    <h4 class="panel-title">Files</h4>
+                </div>
+                <div class="list-group">
+                    {% for file in page.files %}
+                    <a href="{{ site.url }}downloads/{{ file }}" title="{{ file }}" class="list-group-item project-file-link">{{ file }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
 </div>
 
 {% include layout/footer.html %}

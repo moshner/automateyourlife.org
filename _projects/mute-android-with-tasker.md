@@ -1,4 +1,4 @@
-﻿---
+---
 id: "MuteAndroidWithTasker"
 title: "Mute Android with Tasker"
 problem: "I forget to mute my phone in meetings sometimes."
