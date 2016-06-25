@@ -1,4 +1,6 @@
-﻿collections:
+﻿encoding: UTF-8
+
+collections:
   projects:
     output: true
     permalink: /projects/:path/
