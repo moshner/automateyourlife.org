@@ -1,4 +1,4 @@
-﻿---
+---
 id: "TripWirePhoto"
 title: "Trip Wire Photo"
 shortdesc: "Set up a trip wire using a laser (or flashlight), LittleBits, IFTTT, Tasker, Join, and Google Drive."
