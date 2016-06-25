@@ -32,7 +32,7 @@
                     </div>
                     <div id="project-file-list" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="file-list-heading">
                         <div class="list-group">
-                            {% file in project.files %}
+                            {% for file in project.files %}
                             <a href="{{ site.url }}downloads/{{ file }}" class="list-group-item">{{ file }}</a>
                             {% endfor %}
                         </div>
