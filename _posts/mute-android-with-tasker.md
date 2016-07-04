@@ -1,5 +1,4 @@
 ---
-id: "MuteAndroidWithTasker"
 title: "Mute Android with Tasker"
 problem: "I forget to mute my phone in meetings sometimes."
 solution: "Mute my phone automatically by the simple act of turning it upside down on the table."

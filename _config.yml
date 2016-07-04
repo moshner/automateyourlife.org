@@ -18,15 +18,15 @@ defaults:
         layout: "default"
   - scope:
         path: ""
-        type: projects
+        type: posts
     values:
-        layout: "project"
-        id: ""
+        layout: "post"
+        permalink: "/blog/:year/:month/:day/:title/"
         title: ""
-        url: ""
+        category: "blog"
+        tags: []
+        shortdesc: ""
         problem: ""
         solution: ""
-        shortdesc: ""
         image: ""
-        tags: []
         files: []

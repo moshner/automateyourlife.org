@@ -1,5 +1,4 @@
 ---
-id: "BabyTracking"
 title: "Tracking Your Baby's Body Rhythms with Tasker and IFTTT"
 problem: "Remembering the last sleep, changing, or feeding is hard, especially when sleep deprived."
 solution: "Using Tasker and your phone you can track sleep, changings, and feedings."
