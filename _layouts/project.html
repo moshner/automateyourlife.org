@@ -2,13 +2,7 @@
 {% include layout/navbar.html %}
 
 <div class="container-fluid">
-    <div class="col-xs-12">
-        <h2>{{ page.title }}</h2>
-        {% if page.tags %}
-        {% assign tags = page.tags | sort %}
-        <p class="post-tags">{% for tag_id in tags %}{% assign tag = site.data.tags[tag_id] %}<span class="label label-default">{{ tag.text }}</span>{% if forloop.last != true %}&nbsp;{% endif %}{% endfor %}</p>
-        {% endif %}
-    </div>
+    {% include post-header.html %}
     <div class="{% if page.files.size > 0 %}col-lg-8 col-sm-6 {% endif %}col-xs-12">
         {% if page.image != "" %}<img src="{{ site.image_path }}{{ page.image }}" width="72" height="108" title="project icon">{% endif %}
 

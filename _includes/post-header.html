@@ -1,0 +1,8 @@
+<div class="col-xs-12 text-center">
+    <p class="text-muted"><small>posted on {{ page.date | date: "%B %d, %Y" }}</small></p>
+    <h2>{{ page.title }}</h2>
+    {% if page.tags %}
+    {% assign tags = page.tags | sort %}
+    <p class="post-tags">{% for tag_id in tags %}{% assign tag = site.data.tags[tag_id] %}<span class="label label-default">{{ tag.text }}</span>{% if forloop.last != true%}&nbsp;{% endif %}{% endfor %}</p>
+    {% endif %}
+</div>
