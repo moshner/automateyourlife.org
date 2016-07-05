@@ -1,17 +1,23 @@
 ---
+layout: "project"
+permalink: "/projects/mute-android-with-tasker/"
+category: "projects"
+
 title: "Find Your Phone with Tasker"
-problem: "I frequently misplace my phone and have no phone with which to call it."
-solution: "Trigger a sound effect on the phone remotely from my watch, email, or web browser."
 image: "icon-phone-search.png"
 tags: ["android", "tasker", "join", "pebble", "pebble-tasker", "ifttt", "gmail"]
+
+problem: "I frequently misplace my phone and have no phone with which to call it."
+solution: "Trigger a sound effect on the phone remotely from my watch, email, or web browser."
+overview: |
+    The trick here is to make sure that we can locate the phone _even if it is muted_. So the first thing we do is create a task that turns all your volumes up, plays and endless loop of music, and pops up a message to end the music as soon as it is found. After that we need to think about the best way to trigger this feature. There a many ways to trigger it but we are going to cover three here:
+
+     1. From your Pebble watch
+     1. From an email to yourself
+     1. From a web browser using Join by joaoapps.
+requirements: []
 files: ["End_Find_Phone.tsk.xml", "Find_Phone.tsk.xml", "Find_Phone_Via_AutoRemote.prf.xml", "Find_Phone_Via_Join.prf.xml"]
 ---
-
-Overview
---------
-
-The trick here is to make sure that we can locate the phone _even if it is muted_. So the first thing we do is create a task that turns all your volumes up, plays and endless loop of music, and pops up a message to end the music as soon as it is found. After that we need to think about the best way to trigger this feature. There a many ways to trigger it but we are going to cover three here:
-1) From your Pebble watch, 2) From an email to yourself, 3) From a web browser using Join by joaoapps.
 
 Set Up the Tasks
 ================

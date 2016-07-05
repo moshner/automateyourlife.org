@@ -1,24 +1,18 @@
 ---
+layout: "project"
+permalink: "/projects/baby-tracking/"
+category: "projects"
+
 title: "Tracking Your Baby's Body Rhythms with Tasker and IFTTT"
-problem: "Remembering the last sleep, changing, or feeding is hard, especially when sleep deprived."
-solution: "Using Tasker and your phone you can track sleep, changings, and feedings."
 image: "icon-phone-baby.png"
 tags: ["android", "tasker", "autoremote", "ifttt", "google-drive"]
+
+problem: "Remembering the last sleep, changing, or feeding is hard, especially when sleep deprived."
+solution: "Using Tasker and your phone you can track sleep, changings, and feedings."
+overview: "There are three different goals here but all for the same purpose. Helping sleep deprived parents keep their infant baby on track without needing to buy another device."
+requirements: ["Tasker", "AutoRemote", "IFTTT", "Google Drive"]
 files: ["Baby_Fed.tsk.xml", "Baby_Sleep.tsk.xml", "Baby_Wake.tsk.xml", "Both.tsk.xml", "Pee.tsk.xml", "Poo.tsk.xml", "Potty.tsk.xml", "Potty_Send.tsk.xml"]
 ---
-
-Overview
---------
-
-There are three different goals here but all for the same purpose. Helping sleep deprived parents keep their infant baby on track without needing to buy another device.
-
-Requirements
-------------
-
- * Tasker
- * AutoRemote
- * IFTTT
- * Google Drive
 
 Part 1) Sleep Tracking
 ----------------------

@@ -1,26 +1,23 @@
 ---
+layout: "project"
+permalink: "/projects/mute-android-with-tasker/"
+category: "projects"
+
 title: "Mute Android with Tasker"
-problem: "I forget to mute my phone in meetings sometimes."
-solution: "Mute my phone automatically by the simple act of turning it upside down on the table."
 image: "icon-phone-mute.png"
 tags: ["android", "tasker"]
+
+problem: "I forget to mute my phone in meetings sometimes."
+solution: "Mute my phone automatically by the simple act of turning it upside down on the table."
+overview: |
+    This solution uses Tasker for Android to sense the orientation of your phone and turn off the volume. Optionally, you can then create an exit task to return the phone to a more normal volume.
+
+     * Orientation Face Down
+     * On Entrance - Mute phone, all volumes to 0, end call, screen off
+     * On Exit - Unmute phone, all voluems to 5
+requirements: ["Android", "Tasker"]
 files: ["Mute_Phone.tsk.xml", "Unmute.tsk.xml"]
 ---
-
-Overview
---------
-
-This solution uses **tasker** for Android to sense the orientation of your phone and turn off the volume. Optionally, you can then create an exit task to return the phone to a more normal volume.
-
- * Orientation Face Down
- * On Entrance - Mute phone, all volumes to 0, end call, screen off
- * On Exit - Unmute phone, all voluems to 5
-
-Requirements
-------------
-
- * Android
- * Tasker
 
 Detailed Steps
 --------------

@@ -20,13 +20,20 @@ defaults:
         path: ""
         type: posts
     values:
+        # Common values for both blog posts and projects
+        title: ""
+        shortdesc: ""
+        image: ""
+        tags: []
+
+        # Settings applicable to blog posts only
         layout: "post"
         permalink: "/blog/:year/:month/:day/:title/"
-        title: ""
         category: "blog"
-        tags: []
-        shortdesc: ""
+
+        # Settings applicable to project posts only
         problem: ""
         solution: ""
-        image: ""
+        overview: ""
+        requirements: []
         files: []
