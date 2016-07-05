@@ -8,6 +8,7 @@ body {
     color: #444;
     margin-bottom: 60px;
     font-size: 1rem;
+    padding-top: 70px;
 }
 body.home {
     padding-top: 0;

@@ -4,7 +4,7 @@ permalink: "/projects/mute-android-with-tasker/"
 category: "projects"
 
 title: "Find Your Phone with Tasker"
-image: "icon-phone-search.png"
+image: ""
 tags: ["android", "tasker", "join", "pebble", "pebble-tasker", "ifttt", "gmail"]
 excerpt: "For people who routinely lose their phones, it can be handy to be able to send yourself a text message or email to trigger a loud notification to help you find it."
 

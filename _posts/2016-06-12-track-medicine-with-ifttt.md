@@ -4,7 +4,7 @@ permalink: "/projects/track-medicine-with-ifttt/"
 category: "projects"
 
 title: "Track Medicine Intake with IFTTT"
-image: "icon-phone-medicine.png"
+image: ""
 tags: ["ifttt"]
 excerpt: "Tracking medicine for yourself, a family member, or a pet can be a tedious process. But it doesn't have to be."
 
