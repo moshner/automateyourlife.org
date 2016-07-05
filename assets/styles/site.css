@@ -1,12 +1,13 @@
 html {
     position: relative;
     min-height: 100%;
+    font-size: 20px;
 }
 body {
-    background-color: #4fa1dc;
-    color: white;
+    background-color: #fff;
+    color: #444;
     margin-bottom: 60px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 body.home {
     padding-top: 0;
@@ -20,7 +21,7 @@ body > footer.navbar {
     width: 100%;
 }
 a {
-    color: white;
+    color: #4fa1dc;
     text-decoration: underline;
 }
 .panel {
@@ -33,8 +34,8 @@ a {
     max-width: 980px;
 }
 .navbar-white {
-    background-color: white;
-    border-color: white;
+    background-color: #fff;
+    border-color: #fff;
     border-radius: 0;
 }
 .navbar-brand > img {
@@ -62,4 +63,78 @@ footer .navbar-text {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+.social-icon {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-size: cover;
+    content: " ";
+    overflow: hidden;
+}
+
+.social-icon.social-icon-fb {
+    background-image: url("/assets/images/facebook-32.png");
+}
+.social-icon.social-icon-twitter {
+    background-image: url("/assets/images/twitter-32.png");
+}
+.social-icon.social-icon-tumblr {
+    background-image: url("/assets/images/tumblr-32.png");
+}
+.social-icon.social-icon-reddit {
+    background-image: url("/assets/images/reddit-32.png");
+}
+
+#site-nav .social .navbar-text {
+    color: #fff;
+    margin-right: 0;
+}
+
+#site-nav .nav > li.social > a {
+    display: inline-block;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 10px;
+}
+
+#site-nav .nav > li.social > a > span {
+    line-height: 28px;
+    height: 28px;
+    width: 28px;
+}
+
+.navbar-blue {
+    background-color: #4fa1dc;
+    background-image: none;
+    box-shadow: none;
+    border-color: #4fa1dc;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.navbar-default.navbar-blue .navbar-brand {
+    color: #fff;
+}
+
+.navbar-default.navbar-blue .navbar-nav > li > a {
+    color: #fff;
+}
+
+.cover-container {
+    background-color: #4fa1dc;
+    color: #fff;
+}
+
+.cover-container a {
+    color: #fff;
+}
+
+.post-excerpt {
+    margin: 20px 0;
+}
+
+.post-excerpt > div:last-child > hr {
+    border-color: #ccc;
+    margin-bottom: 0;
 }

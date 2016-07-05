@@ -1,23 +1,16 @@
-<nav class="navbar navbar-default navbar-white">
-    <div class="container-fluid">
+<div id="site-nav" class="navbar navbar-default navbar-blue navbar-fixed-top">
+    <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ayl-site-navbar" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{ site.url }}">
-                <img alt="Brand" src="{{ site.image_path }}favicons/favicon-32x32.png">
-            </a>
-            <a class="navbar-brand navbar-brand-link" href="{{ site.url }}">Automate Your Life</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
+            <a class="navbar-brand navbar-brand-link" href="//automateyourlife.org/">Automate Your Life</a>
         </div>
-        <div class="collapse navbar-collapse" id="ayl-site-navbar">
+
+        <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="{{ site.url }}projects/">Projects</a></li>
-                <li><a href="//forum.automateyourlife.org/">Forums</a></li>s
+                <li><a href="//forum.automateyourlife.org/">Forums</a></li>
                 <li><a href="{{ site.url }}about/">About</a></li>
+                <li class="social"><a href="https://www.facebook.com/automatingyourlife/"><span class="social-icon social-icon-fb"></span></a></li>
             </ul>
-        </div>
+        </div><!--/.nav-collapse -->
     </div>
-</nav>
+</div><!-- Begin page content -->

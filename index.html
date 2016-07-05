@@ -1,53 +1,28 @@
 ---
-layout: "home"
 ---
 
 <div class="cover-container">
-    <div class="mega-image">
-        <img class="img-responsive" src="{{ site.image_path }}automate-your-life@1x.png" alt="Automate your life">
+    <div class="container-fluid">
+        <div class="mega-image">
+            <img class="img-responsive" src="{{ site.image_path }}automate-your-life@1x.png" alt="Automate your life">
+        </div>
+        <div class="inner cover text-center">
+            <p class="lead">Welcome to everyone visiting from <a href="http://www.makerfairekc.com/">Maker Faire Kansas City 2016</a>! We have set up a <a href="//forum.automateyourlife.org/" title="AutomateYourLife message boards">message board</a> to help start the discussion about what we all want out of this community. <a href="//forum.automateyourlife.org/" title="AutomateYourLife message boards">Come join us!</a></p>
+        </div>
     </div>
-    <div class="inner cover">
-        <h1 class="cover-heading">Automate Your Life with Android and IFTTT</h1>
-        <p class="lead">Track your medicine intake, find your phone from your watch, automatically send a text when you arrive safely at work each day. Find out how you can use Tasker, Android, IFTTT, and more to automate your life.</p>
-        <p class="lead">Welcome to everyone visiting from <a href="http://www.makerfairekc.com/">Maker Faire Kansas City 2016</a>! We have set up a <a href="//forum.automateyourlife.org/" title="AutomateYourLife message boards">message board</a> to help start the discussion about what we all want out of this community. <a href="//forum.automateyourlife.org/" title="AutomateYourLife message boards">Come join us!</a></p>
+</div>
+
+<div class="container-fluid">
+    {% for post in site.posts %}
+    <div class="row post-excerpt">
+        <div class="col-xs-12">
+            <p class="text-muted"><small>posted on {{ post.date | date: "%B %d, %Y" }}</small></p>
+            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+            {{ post.excerpt }}
+        </div>
+        {% if forloop.last != true %}
+        <div class="col-xs-12"><hr></div>
+        {% endif %}
     </div>
-</div>
-<div class="projects">
-    <h2>Projects</h2>
-    {% assign list = site.projects | sort: 'title' %}
-    {% for p in list %}{% include project.html project=p %}{% endfor %}
-</div>
-<div class="project-ideas">
-    <h2>Project Ideas</h2>
-    <p>Here are some other project ideas to get you started.</p>
-    <ul>
-        <li>Mute your phone when you arrive at work.</li>
-        <li>Automatically turn on your porch light when it is dusk.</li>
-        <li>Text yourself a todo item and have it sent to your todo list manager.</li>
-        <li>Feed your pet with a button press.</li>
-        <li>Find your keys using <a href="https://shop.smartthings.com/#!/products/smartsense-presence">SmartThings Presence Sensor</a>.</li>
-        <li>Alert your phone when your front door opens and nobody is home.</li>
-        <li>Control your thermostat from your watch or phone.</li>
-        <li>Automatically track the mileage of your car.</li>
-        <li>Turn on/off your porch light from your phone.</li>
-        <li>Add a task to your todo list to bring an umbrella if it is supposed to rain.</li>
-        <li><a href="https://ifttt.com/recipes/99555-create-link-notes-in-evernote-from-feedly-articles-saved-for-later">Save articles to Evernote from Feedly for free with IFTTT</a></li>
-        <li>Unmute your phone when you get two calls from the same number within 2 minutes. "It must be an emergency".</li>
-        <li>Get an alert when the International Space Station flies overhead.</li>
-        <li>Automatically <a href="https://ifttt.com/recipes/150092-when-my-check-engine-light-turns-on-add-it-to-an-evernote-to-do-list">log check engine light diagnostics to evernote</a> as soon as the light comes on.</li>
-    </ul>
-</div>
-<div class="conntected-systems">
-    <h2>My Automated Life</h2>
-    <p>Below is a map of all my interconnected systems. All of these are products I own and have connected to talk to each other without needing help.</p>
-    <img class="img-responsive" src="{{ site.image_path }}ConnectedSystems.jpg" alt="A map of my connected life">
-</div>
-<div class="other-links">
-    <h2>Other Resources</h2>
-    <p>There are a lot of other resources out on the web that can help inspire, fix issues, or even broaden your horizons. Here are a select few.</p>
-    <ul>
-        <li><a href="http://lifehacker.com/android-automation-showdown-ifttt-vs-tasker-1781835294">Android Automation Showdown: IFTTT vs. Tasker</a> - Lifehacker.com</li>
-        <li><a href="https://www.reddit.com/r/IFTTT">All Things IF and DO // IFTTT</a> - Reddit.com</li>
-        <li><a href="https://www.reddit.com/r/tasker/">Tasker: Total Automation with Android</a> - Reddit.com</li>
-    </ul>
+    {% endfor %}
 </div>

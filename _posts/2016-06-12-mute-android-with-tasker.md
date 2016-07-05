@@ -6,6 +6,7 @@ category: "projects"
 title: "Mute Android with Tasker"
 image: "icon-phone-mute.png"
 tags: ["android", "tasker"]
+excerpt: "Learn to set up Tasker to mute your Android phone when you flip it over."
 
 problem: "I forget to mute my phone in meetings sometimes."
 solution: "Mute my phone automatically by the simple act of turning it upside down on the table."

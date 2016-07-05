@@ -6,6 +6,7 @@ category: "projects"
 title: "Track Medicine Intake with IFTTT"
 image: "icon-phone-medicine.png"
 tags: ["ifttt"]
+excerpt: "Tracking medicine for yourself, a family member, or a pet can be a tedious process. But it doesn't have to be."
 
 problem: "It's hard to remember if I've taken my medication."
 solution: "Log medicine intake on a spreadsheet right when it is taken."

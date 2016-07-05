@@ -6,6 +6,7 @@ category: "projects"
 title: "Tracking Your Baby's Body Rhythms with Tasker and IFTTT"
 image: "icon-phone-baby.png"
 tags: ["android", "tasker", "autoremote", "ifttt", "google-drive"]
+excerpt: "There are a multitude of apps for new parents, but they tend to have ads, paid features, or just be difficult to use. Instead, you can set up the perfect system for your needs using only a few tools."
 
 problem: "Remembering the last sleep, changing, or feeding is hard, especially when sleep deprived."
 solution: "Using Tasker and your phone you can track sleep, changings, and feedings."

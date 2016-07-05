@@ -6,6 +6,7 @@ category: "projects"
 title: "Find Your Phone with Tasker"
 image: "icon-phone-search.png"
 tags: ["android", "tasker", "join", "pebble", "pebble-tasker", "ifttt", "gmail"]
+excerpt: "For people who routinely lose their phones, it can be handy to be able to send yourself a text message or email to trigger a loud notification to help you find it."
 
 problem: "I frequently misplace my phone and have no phone with which to call it."
 solution: "Trigger a sound effect on the phone remotely from my watch, email, or web browser."

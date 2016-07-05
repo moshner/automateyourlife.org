@@ -1,0 +1,181 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  font-size: 16px
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+#site-nav .social .navbar-text {
+  color: #fff;
+  margin-right: 0;
+}
+
+#site-nav .nav > li.social > a {
+  display: inline-block;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 5px;
+}
+
+#site-nav .nav > li.social > a > span {
+  line-height: 20px;
+  height: 20px;
+  width: 20px;
+}
+.media-body, .media-left, .media-right {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.media-left, .media > .pull-left {
+    padding-right: 10px;
+}
+
+.navbar-white {
+  background-color: white;
+  border-color: white;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+#quicktags-navbar .navbar-nav > li > a {
+  color: #4fa1dc;
+}
+
+.navbar-blue {
+  background-color: #4fa1dc;
+  border-color: #4fa1dc;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.navbar-default.navbar-blue .navbar-brand {
+  color: white;
+}
+
+.navbar-default.navbar-blue .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-brand > img {
+  display: inline-block;
+  margin-top: -6px;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -65px;
+  /* Pad bottom by footer height */
+  padding: 0 0 65px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 65px;
+  background-color: white;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+#jumbotron {
+  background-color: #4fa1dc;
+  color: white;
+  min-height: 400px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#featured-slider .carousel {
+  background-color: #3B79A5;
+}
+
+#jumbotron .carousel-control.right, #jumbotron .carousel-control.left {
+  background-image: none;
+}
+
+#jumbotron .carousel-control .glyphicon-chevron-left, #jumbotron .carousel-control .glyphicon-chevron-right {
+  top: auto;
+  bottom: 25px;
+}
+
+
+#quicktags-navbar .navbar-nav {
+  float: none;
+  text-align: center;
+}
+
+#quicktags-navbar .navbar-nav > li {
+  float: none;
+  display: inline-block;
+}
+#jumbotron-img {
+  max-width: 100%;
+  height: auto;
+}
+
+#featured-slider {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  max-height: calc(100% - 40px);
+}
+
+#featured-slider .carousel-inner .item {
+  min-height: 250px;
+}
+
+#jumbotron a {
+  color: white;
+  text-decoration: underline;
+}
+
+#jumbotron .media {
+  padding: 20px;
+  text-align: left;
+}
+
+#footer p {
+  margin: 20px 0;
+}
+
+code {
+  font-size: 80%;
+}
+
+.social-icon {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-size: cover;
+    content: " ";
+    overflow: hidden;
+}
+
+.social-icon.pull-right {
+    margin-left: 8px;
+}
+
+.social-icon.social-icon-fb {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuOWwzfk4AAAFbSURBVEhLY7COnEFTRI4FNlEzvNMXRhQuDy9cHpC12DlhDlAETQ0ckWaBZ+qCpZsvvHr75T8qmLT4GJpKOCLBguiSlZhGQ8CUpcfRFMMRsRY4xc95/PwD1DwMQAULuuYchBqGDVDBghMXHkENg4FLN5+v23Vl9Y7LQJTXshlNPRwRa8G7D9+gBoPBpn3X0RTgQkRZYBs98/uP31CzwaC8ZzuaGlyIKAvsgBb8RLGgsG0LmhpcaBhbkNmw4cyVJxB09urTv3//Qc0Gg1sP3sBlgSi2dBWadjjCaUFl706oYUSAgOzFaNrhiAoW/Pj52zZqJpp2OKKCBU9efETTi4yoYMGpS4/R9CIjnBb4Zy2q7NsJQdX9u379/gM1DwzmrT0Dl02uXoumFxnhtAAZYSbTAlrng1EL0NCoBQTRqAUE0dC3ANi2LerYWtK1DY680xagqcGFiLKAfBQ5AwAsrTEKTdS6wAAAAABJRU5ErkJggg==")
+}
+
+.social-icon.social-icon-twitter {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuOWwzfk4AAAKKSURBVEhL5VbfT9NQFOafhLmo0cSgCYmaSIzxyRiN8UE0PBoflDcNjKHjNxpkEAcqZEbMdHEOzBjKbLt26/q787u7hbZ37awMHoxfvixLe+75zj3n3HPb0zxm/LcCmtmcyivXX4knx/m+Me7ijPA4K1dky3ndQlEwLLslAOu5rwp9GgUl0bg0I/SO8Qwhtryt1jV75bt6Oy0OZWowJgJ42jvKzUbTEBTz/GSAd8o+8svhz7kXfEU2YU8EHm3UyetRLpn7s8bwWu3AXRgHpqvvy9piUUHQRODBqrtmKCPVNF8qvUD4MY+jMMYTZBNX5quybnt2sM/+lJDeUmzq0o/Vkuq17MCrC1W+sZ8iUoM2i8F5cbGoqoZPaK6gMGaBROyK7qSBCKCL+lOsEeXpJIekoccKginrVmAo7by5JFLvABEA3u1otPqdGYtgA95dkahbgAgkcg2Eht8TCdb0cHy4XqfegVaR131F7p6pvNvuROAtyQ9r1A1zFY16B4iAZduoO2N0aJ5KcobnIDlF3hL0MxOhA+CviGNLfVI4AsA3wbg8ewT7yP5w8wO4ApJqlWvms0/y2efsmuhEqpkR4ArsSkasNUO64VrJFz7gCgBPsl316620e4AP4BMwLfveG4lZFpFILL0AGPgEAGQQk+fCJLu+M3FrbpTZ5FCwAhSW1cR0u/YyYlNxmLvOyjYEC2R3tcFoRy8+zqe3Q70DroBpke+Aic+NiK7BgWnhyy/DWR+Cno8/9RuvRdzjEUcxZTzBj3yQFe9MCAHZgWbaCwUFlxzjJZD4XBjJ1vfqAQ0TCF8NdiRjKt+4n6khS2g79AaISw3fVXeWpaeb8uaeHiFoH4KLfIT41wWazd9zKOXHfat9GAAAAABJRU5ErkJggg==")
+}
+
+.social-icon.social-icon-tumblr {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuOWwzfk4AAAFWSURBVEhLY3AJyaIpGiEW5FR0LVmzHY4CE0rRFOBBRFkwcfaK/0ggLqceTQEeNDgsmL98E9RsMKC+BVdu3IWaDQZUtqBtwjyowTBANQs8InKnzlv1+/dvqMEw8Pjpy/sPn8LRkZMX0DQiI5wWnDx35eOnL1Aj8QKgHWh6kRFOC/78+QM1gBAYrBYAg+j0hWtA9OLVW6hJMHD52h2IFARt2XUYTS8ywhfJELR60x6owTBA5WQ6agEaHxONWoDGx0TDwILN6BZMmr0CWYFPTCGwRkIWQUaELVixfifUYBj49+/f4RPnpy9YM2Ph2l0HTnz+8vXHz19ouuCIsAXNvXOgBuMGFFngFpYDLN2gJuEAFFkARH6xRfuPnoEahgGev3wzYdZyNC1wRJQFEJRS1DJv2ab9R86cvXj9zIVr+w6fXrBiS2Ftn2toNppKZESCBeShoW5BSBYAz5KVsQ22AOsAAAAASUVORK5CYII=")
+}
+
+.social-icon.social-icon-reddit {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuOWwzfk4AAAR7SURBVEhL7Vb7U1VVFO5/AcGylzo2U43YY7qX11WBsjDQUgREyBzIHlZoMoToqJShAjpJmaaU5WMGMl8V4wPHmJsoGJpMY02OeN7vc/fp2+zDvoebRpeZfmimPd/cOftbe+1vn7XWXufeI4RS/lX8L8AhPjdDWvikkD05gZ+QQOYkut3LT4sF04WsNHHuQ/bJw57reiQWu31TXVsZXJy0gFSc4UTPerGYhxFz3aFB90oUj+5A1Dr6JdFVz7Hl5QV8fZICWenuLwPYzrl0wTqyx+k9je3o7oN9QnY6FqjvLMHU+vYAd0lOQK2rgr/9Q5cQTmWMsvxZjxD79DE2lZdk0unZE2wKJCdgde6DgFJTyBlx9gNEuo330LesVqpfoNHzPL1tHV+QnIBz8TziLs6bESTV1eXENLAvG85PPWLkfm4dTyA8CW+tbXjd7Gizu78huoZSsc8cx1Rb/5q8OMRiJZeEzS92WkcPaBvfFHLuDe7ABVLl8hyjvcns2KFtekvMnwrorQ2x339FTP2z4cF1KAJM7MZ1veV9sWAaCldvqbc69xt7muXS7EQB/cNa6jk6iHCLRhbDsVEwxmfN6rulOCZqFMA7qbVl5t5t7uVe5oXFRBboejYcW2t6Oy4gl4RQ10RTtM2rlJVFRJGwhlim+dUuaf7jvGDugHCqVJRhHtrt2RZ1Gb6pVBci2zSSjo2biDVUwNi5AWZ9ez0uun3mGJ7dq5ekklB8o/GA8OLGwdH+vlPITDN2NOIZvzCNCHzShDmOb7Sto7sP9uH2+86ZadKCWegN/jQImIozuAk5c6/1w11vadA/WkMFdm0CTwWUqnzaRob/QLUhPtKLM0d9pjEft79XjExhpG/Km+pevUxNA1Fxtl+U0qJniKkj1EghciNXRED6SUbqEUM4mF+3MwZQ31sGhg0kmfMjpgrfAFNtGefRPyhFiPHpB4zxBZAu6/hBmJRVi3wGJ1ocIha9QWhhNBqjvG8auVzIZ9CkrlkK0urq4MyoQCiFFgMEVjzPGUBeNsf4eKNcmhUkGeSlEWoqzw2SyhsLsUkwDHEBVBFs+ta1nJkAcDfpJs3xTeICclkOYoduzBovA64owi3mjskwgzjnQbWuUsx7OM5EpsR+G/IcR3rpKU7GBQD73Eno495yRm+lhRu7MaRvrUNV0A9Z4WNKzXysIeIwPWxrA19s7N0GhrduhjECSBetMNRA+2Z8W8CI8x6xTx3xbPpVSRjIvNW1H69IfbMnG7u3gESt08sf2HOMACBX5RFZxFIneo4nUCqaiZNaJw45P3Y7PadQi1pjDW6W71IRoW0cksItXGlGciQKAPhz4PRRB9w+5/x3WmM1BITc+4JrkBWpeJa2fqVzoZs2V0Kciz3SgieCaxjuIECRla41rHCvX6EyGK6LiLtDP+NjAqDt0F4bc33jtX6t/lV0jsRNRnAXAYZwqvxKvvn5dkSANmRDp13TtvAAPSghq3Ll3L9rt+MIBIH/PwXTUUJS4aM0sXc571/xjwUmiv+6QCjlT39m4jaU20UOAAAAAElFTkSuQmCC")
+}
