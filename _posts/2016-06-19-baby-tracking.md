@@ -4,6 +4,7 @@ permalink: "/projects/baby-tracking/"
 category: "projects"
 
 title: "Tracking Your Baby's Body Rhythms with Tasker and IFTTT"
+author: "nick-mosher"
 image: ""
 tags: ["android", "tasker", "autoremote", "ifttt", "google-drive"]
 excerpt: "There are a multitude of apps for new parents, but they tend to have ads, paid features, or just be difficult to use. Instead, you can set up the perfect system for your needs using only a few tools."

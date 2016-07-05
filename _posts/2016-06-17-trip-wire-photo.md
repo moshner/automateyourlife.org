@@ -4,6 +4,7 @@ permalink: "/projects/trip-wire-photo/"
 category: "projects"
 
 title: "Trip Wire Photo"
+author: "nick-mosher"
 tags: ["ifttt", "littleBits", "tasker", "join", "google-drive"]
 excerpt: "Set up a trip wire using a laser (or flashlight), LittleBits, IFTTT, Tasker, Join, and Google Drive."
 

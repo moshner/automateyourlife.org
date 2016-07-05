@@ -139,3 +139,7 @@ footer .navbar-text {
     border-color: #ccc;
     margin-bottom: 0;
 }
+small .social-icon {
+    height: 13px;
+    width: 13px;
+}

@@ -13,6 +13,9 @@ style_path: "/assets/styles/"
 
 gems:
   - jekyll-feed
+  - jekyll-paginate
+
+paginate: 10
 
 defaults:
   - scope:
@@ -25,6 +28,7 @@ defaults:
     values:
         # Common values for both blog posts and projects
         title: ""
+        author: ""
         image: ""
         tags: []
 

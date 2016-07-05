@@ -4,6 +4,7 @@ permalink: "/projects/mute-android-with-tasker/"
 category: "projects"
 
 title: "Mute Android with Tasker"
+author: "nick-mosher"
 image: ""
 tags: ["android", "tasker"]
 excerpt: "Learn to set up Tasker to mute your Android phone when you flip it over."
