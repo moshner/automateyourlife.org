@@ -5,7 +5,7 @@ collections:
         output: true
         permalink: /projects/:path/
 
-url: "//automateyourlife.org/"
+url: "//dev.automateyourlife.org/"
 asset_path: "/assets/"
 image_path: "/assets/images/"
 script_path: "/assets/scripts/"
