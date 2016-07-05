@@ -15,7 +15,7 @@ gems:
   - jekyll-feed
   - jekyll-paginate
 
-paginate: 4
+paginate: 10
 
 defaults:
   - scope:
