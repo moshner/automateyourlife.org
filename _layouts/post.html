@@ -1,0 +1,19 @@
+{% include layout/header.html %}
+{% include layout/navbar.html %}
+
+<div class="container-fluid">
+    <div class="col-xs-12">
+        <h2>{{ page.title }}</h2>
+        {% if page.tags %}
+        {% assign tags = project.tags | sort %}
+        <p class="post-tags">{% for tag_id in tags %}{% assign tag = site.data.tags[tag_id] %}<span class="label label-default">{{ tag.text }}</span>{% if !forloop.last %}&nbsp;{% endif %}{% endfor %}</p>
+        {% endif %}
+    </div>
+    <div class="col-xs-12">
+        {% if page.image != "" %}<img src="{{ site.image_path }}{{ page.image }}" width="72" height="108" title="project icon">{% endif %}
+        <hr>
+        {{ content }}
+    </div>
+</div>
+
+{% include layout/footer.html %}

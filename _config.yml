@@ -22,7 +22,6 @@ defaults:
     values:
         # Common values for both blog posts and projects
         title: ""
-        shortdesc: ""
         image: ""
         tags: []
 
