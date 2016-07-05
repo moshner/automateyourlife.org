@@ -11,6 +11,9 @@ image_path: "/assets/images/"
 script_path: "/assets/scripts/"
 style_path: "/assets/styles/"
 
+gems:
+  - jekyll-feed
+
 defaults:
   - scope:
         path: ""
