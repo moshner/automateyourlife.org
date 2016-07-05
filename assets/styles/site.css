@@ -10,8 +10,8 @@ body {
     font-size: 1rem;
     padding-top: 70px;
 }
-body.home {
-    padding-top: 0;
+#jumbotron {
+    margin-top: -70px;
 }
 body > footer.navbar {
     border-radius: 0;
