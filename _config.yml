@@ -1,5 +1,7 @@
 encoding: UTF-8
 
+title: "Automate Your Life"
+
 collections:
     projects:
         output: true
