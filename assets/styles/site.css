@@ -5835,9 +5835,6 @@ body > footer.navbar {
   bottom: 0;
   width: 100%; }
 
-.container, .container-fluid {
-  max-width: 980px; }
-
 .navbar-brand > img {
   display: inline-block;
   margin-top: -6px; }
@@ -5909,7 +5906,8 @@ footer .navbar-text {
   background-color: #4fa1dc;
   color: #fff; }
   .cover-container a {
-    color: #fff; }
+    color: #fff;
+    text-decoration: underline; }
 
 .post-excerpt {
   margin-top: 20px; }

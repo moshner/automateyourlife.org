@@ -22,10 +22,6 @@ body > footer.navbar {
     width: 100%;
 }
 
-.container, .container-fluid {
-    max-width: 980px;
-}
-
 .navbar-brand > img {
     display: inline-block;
     margin-top: -6px;
@@ -47,9 +43,11 @@ body > footer.navbar {
 
     }
 }
+
 .mega-image {
     text-align: center;
 }
+
 footer .navbar-text {
     float: none;
 }
@@ -124,6 +122,7 @@ footer .navbar-text {
 
     a {
         color: #fff;
+        text-decoration: underline;
     }
 }
 

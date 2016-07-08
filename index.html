@@ -4,7 +4,7 @@ title: ""
 
 {% if paginator.page == 1 %}
 <div id="jumbotron" class="cover-container">
-    <div class="container-fluid">
+    <div class="container">
         <div class="mega-image">
             <img class="img-responsive" src="{{ site.image_path }}/automate-your-life@1x.png" alt="Automate your life">
         </div>
@@ -15,7 +15,7 @@ title: ""
 </div>
 {% endif %}
 
-<div class="container-fluid">
+<div class="container">
     {% for post in paginator.posts %}
     <div class="row post-excerpt">
         <div class="col-xs-12">
@@ -35,7 +35,7 @@ title: ""
 </div>
 
 {% if paginator.total_pages > 1 %}
-<div class="container-fluid">
+<div class="container">
     <nav>
     <ul class="pagination">
         {% if paginator.previous_page %}
