@@ -1,0 +1,142 @@
+@import "bootstrap-custom";
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: ($navbar-height + 20px) 0;
+}
+
+#jumbotron {
+    margin-top: (-1 * $navbar-height);
+}
+
+body > footer.navbar {
+    border-radius: 0;
+    border-bottom-width: 0;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.container, .container-fluid {
+    max-width: 980px;
+}
+
+.navbar-brand > img {
+    display: inline-block;
+    margin-top: -6px;
+}
+
+.navbar-white {
+    background-color: #fff;
+    border-color: #fff;
+    border-radius: 0;
+
+    .navbar-brand-link {
+        color: $brand-primary;
+        text-decoration: none;
+    }
+
+    .nav a {
+        color: $brand-primary;
+        text-decoration: none;
+
+    }
+}
+.mega-image {
+    text-align: center;
+}
+footer .navbar-text {
+    float: none;
+}
+
+.list-group-item.project-file-link {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.social-icon {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-size: cover;
+    content: " ";
+    overflow: hidden;
+
+    &.social-icon-fb {
+        background-image: url("/assets/images/facebook-32.png");
+    }
+    &.social-icon-twitter {
+        background-image: url("/assets/images/twitter-32.png");
+    }
+    &.social-icon-tumblr {
+        background-image: url("/assets/images/tumblr-32.png");
+    }
+    &.social-icon-reddit {
+        background-image: url("/assets/images/reddit-32.png");
+    }
+}
+
+#site-nav .nav > li.social {
+    .navbar-text {
+        color: #fff;
+        margin-right: 0;
+    }
+
+    & > a {
+        display: inline-block;
+        padding: (($navbar-height - $font-size-base) / 2) 0;
+        margin-left: $nav-link-padding-horizontal;
+        line-height: $font-size-base;
+
+        & > span {
+            height: $font-size-base;
+            width: $font-size-base;
+        }
+    }
+}
+
+.navbar-blue {
+    background-color: $brand-primary;
+    background-image: none;
+    box-shadow: none;
+    border-color: $brand-primary;
+    border-radius: 0;
+    margin-bottom: 0;
+
+    .navbar-brand {
+        color: #fff;
+    }
+
+    .navbar-nav > li > a {
+        color: #fff;
+    }
+}
+
+.cover-container {
+    background-color: $brand-primary;
+    color: #fff;
+
+    a {
+        color: #fff;
+    }
+}
+
+.post-excerpt {
+    margin-top: ($grid-gutter-width / 2);
+
+    & > div:last-child > hr {
+        border-color: $gray-light;
+        margin-bottom: 0;
+    }
+}
+
+small .social-icon {
+    height: $font-size-mini;
+    width: $font-size-mini;
+}

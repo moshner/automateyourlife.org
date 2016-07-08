@@ -3656,7 +3656,7 @@ tbody.collapse.in {
 
 .navbar {
   position: relative;
-  min-height: 50px;
+  min-height: 60px;
   margin-bottom: 28px;
   border: 1px solid transparent; }
   .navbar:before, .navbar:after {
@@ -3762,10 +3762,10 @@ tbody.collapse.in {
 
 .navbar-brand {
   float: left;
-  padding: 11px 20px;
+  padding: 16px 20px;
   font-size: 24px;
   line-height: 28px;
-  height: 50px; }
+  height: 60px; }
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
   .navbar-brand > img {
@@ -3780,8 +3780,8 @@ tbody.collapse.in {
   float: right;
   margin-right: 20px;
   padding: 9px 10px;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 13px;
+  margin-bottom: 13px;
   background-color: transparent;
   background-image: none;
   border: 1px solid transparent;
@@ -3800,7 +3800,7 @@ tbody.collapse.in {
       display: none; } }
 
 .navbar-nav {
-  margin: 5.5px -20px; }
+  margin: 8px -20px; }
   .navbar-nav > li > a {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -3828,8 +3828,8 @@ tbody.collapse.in {
       .navbar-nav > li {
         float: left; }
         .navbar-nav > li > a {
-          padding-top: 11px;
-          padding-bottom: 11px; } }
+          padding-top: 16px;
+          padding-bottom: 16px; } }
 
 .navbar-form {
   margin-left: -20px;
@@ -3839,8 +3839,8 @@ tbody.collapse.in {
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 0px;
-  margin-bottom: 0px; }
+  margin-top: 5px;
+  margin-bottom: 5px; }
   @media (min-width: 768px) {
     .navbar-form .form-group {
       display: inline-block;
@@ -3908,18 +3908,18 @@ tbody.collapse.in {
   border-bottom-left-radius: 0; }
 
 .navbar-btn {
-  margin-top: 0px;
-  margin-bottom: 0px; }
+  margin-top: 5px;
+  margin-bottom: 5px; }
   .navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn {
-    margin-top: 6px;
-    margin-bottom: 6px; }
+    margin-top: 11px;
+    margin-bottom: 11px; }
   .navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn {
-    margin-top: 14px;
-    margin-bottom: 14px; }
+    margin-top: 19px;
+    margin-bottom: 19px; }
 
 .navbar-text {
-  margin-top: 11px;
-  margin-bottom: 11px; }
+  margin-top: 16px;
+  margin-bottom: 16px; }
   @media (min-width: 768px) {
     .navbar-text {
       float: left;
@@ -5822,10 +5822,10 @@ html {
   min-height: 100%; }
 
 body {
-  margin: 70px 0; }
+  margin: 80px 0; }
 
 #jumbotron {
-  margin-top: -50px; }
+  margin-top: -60px; }
 
 body > footer.navbar {
   border-radius: 0;
@@ -5886,12 +5886,13 @@ footer .navbar-text {
 
 #site-nav .nav > li.social > a {
   display: inline-block;
-  padding: 15px 0;
-  margin-left: 15px;
-  line-height: 20px; }
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 10px; }
   #site-nav .nav > li.social > a > span {
-    height: 20px;
-    width: 20px; }
+    line-height: 28px;
+    height: 28px;
+    width: 28px; }
 
 .navbar-blue {
   background-color: #4fa1dc;
@@ -5918,5 +5919,5 @@ footer .navbar-text {
     margin-bottom: 0; }
 
 small .social-icon {
-  height: 14px;
-  width: 14px; }
+  height: 13px;
+  width: 13px; }

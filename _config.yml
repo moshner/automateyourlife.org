@@ -13,6 +13,8 @@ image_path: "/assets/images"
 script_path: "/assets/scripts"
 style_path: "/assets/styles"
 
+exclude: [node_modules, nbproject, src]
+
 gems:
   - jekyll-feed
   - jekyll-paginate
