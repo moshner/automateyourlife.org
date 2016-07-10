@@ -28,7 +28,7 @@ import uglify from 'gulp-uglify';
     gulp.task('css', ['clean-css'], () => {
         return gulp.src('src/assets/sass/*.scss')
                 .pipe(sass())
-                .pipe(gulp.dest('assets/styles'));
+                .pipe(gulp.dest('dist/assets/styles'));
     });
 
     gulp.task('fonts', ['clean-fonts'], () => {
@@ -37,26 +37,30 @@ import uglify from 'gulp-uglify';
                     leading: false,
                     filePattern: /^.*\.svg/
                 }))
-                .pipe(gulp.dest('assets/fonts'));
+                .pipe(gulp.dest('dist/assets/fonts'));
     });
 
-    gulp.task('html', ['jekyll'], () => {});
+    gulp.task('html', ['jekyll'], () => {
+        return gulp.src('build-mid/**/*.html')
+                .pipe(htmlmin({collapseWhitespace: true}))
+                .pipe(gulp.dest('dist'))
+    });
 
     gulp.task('images', ['clean-images'], () => {
         return gulp.src('src/assets/images/**/*')
-                .pipe(gulp.dest('assets/images'));
+                .pipe(gulp.dest('dist/assets/images'));
     });
 
     gulp.task('js', ['clean-js'], () => {
     });
 
     gulp.task('clean-css', () => {
-        return gulp.src('assets/styles')
+        return gulp.src('dist/assets/styles')
                 .pipe(clean());
     });
 
     gulp.task('clean-fonts', () => {
-        return gulp.src('assets/fonts')
+        return gulp.src('dist/assets/fonts')
                 .pipe(clean());
     });
 
@@ -70,17 +74,17 @@ import uglify from 'gulp-uglify';
     });
 
     gulp.task('clean-images', () => {
-        return gulp.src('assets/images')
+        return gulp.src('dist/assets/images')
                 .pipe(clean());
     });
 
     gulp.task('clean-js', () => {
-        return gulp.src('assets/scripts')
+        return gulp.src('dist/assets/scripts')
                 .pipe(clean());
     });
 
     gulp.task('generate-forum-post', () => {
-        glob('_posts/*.md', (err, files) => {
+        glob('src/_posts/*.md', (err, files) => {
             files.reverse();
             console.log(files[0]);
         });

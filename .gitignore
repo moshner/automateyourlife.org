@@ -1,3 +1,6 @@
 nbproject
 _site
+build-mid
 node_modules
+.jekyll-metadata
+npm-debug.log

@@ -1,14 +1,24 @@
-encoding: UTF-8
-
 title: "Automate Your Life"
 
+source:      ./src
+destination: ./build-mid
+plugins_dir: ./plugins
+layouts_dir: ./src/_layouts
+data_dir:    ./src/_data
+
+safe:         false
+include:      [".nojekyll", "CNAME"]
+exclude:      ["assets"]
+keep_files:   ["assets"]
+encoding:     "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
 url: "//dev.automateyourlife.org"
+
 asset_path: "/assets"
 image_path: "/assets/images"
 script_path: "/assets/scripts"
 style_path: "/assets/styles"
-
-exclude: [node_modules, nbproject, src]
 
 gems:
   - jekyll-feed
