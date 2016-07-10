@@ -21,6 +21,8 @@
   },
   "scripts": {
     "build": "gulp",
-    "build-dev": "gulp dev-site"
+    "deploy": "gulp deploy",
+    "dev-build": "gulp dev-site",
+    "dev-deploy": "gulp dev-deploy"
   }
 }

@@ -22,7 +22,17 @@ import uglify from 'gulp-uglify';
     gulp.task('default', ['css', 'fonts', 'html', 'images', 'js']);
 
     gulp.task('deploy', () => {
+        return gulp.src('./dist/**/*')
+                .pipe(ghPages({
+                    origin: "git@github.com:moshner/automateyourlife.org.git"
+                }));
+    });
 
+    gulp.task('dev-deploy', () => {
+        return gulp.src('./dist/**/*')
+                .pipe(ghPages({
+                    origin: "git@github.com:chimericdream/dev.automateyourlife.org.git"
+                }));
     });
 
     gulp.task('dev-site', ['default', 'clean-dev'], () => {
