@@ -2,11 +2,6 @@ encoding: UTF-8
 
 title: "Automate Your Life"
 
-collections:
-    projects:
-        output: true
-        permalink: /projects/:path/
-
 url: "//dev.automateyourlife.org"
 asset_path: "/assets"
 image_path: "/assets/images"
