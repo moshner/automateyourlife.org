@@ -3,31 +3,31 @@
 
 <div class="container">
     {% include post-header.html %}
-    <div class="{% if page.files.size > 0 %}col-lg-8 col-sm-6 {% endif %}col-xs-12">
-        {% if page.image != "" %}<img src="{{ site.image_path }}/{{ page.image }}" width="72" height="108" title="project icon">{% endif %}
+    {% if page.image != "" %}<img src="{{ site.image_path }}/{{ page.image }}" width="72" height="108" title="project icon">{% endif %}
 
-        {% if page.overview != "" %}<h3>Overview</h3><p>{{ page.overview }}</p>{% endif %}
+    {% if page.overview != "" %}<h3>Overview</h3><p>{{ page.overview }}</p>{% endif %}
 
-        <p><strong>Problem</strong>: {{ page.problem }}</p>
-        <p><strong>Solution</strong>: {{ page.solution }}</p>
+    <p><strong>Problem</strong>: {{ page.problem }}</p>
+    <p><strong>Solution</strong>: {{ page.solution }}</p>
 
-        {% if page.requirements %}<h3>Requirements</h3><p>{% for req in page.requirements %}{{ req }}{% if forloop.last != true %}, {% endif %}{% endfor %}</p>{% endif %}
+    {% if page.requirements %}<h3>Requirements</h3><p>{% for req in page.requirements %}{{ req }}{% if forloop.last != true %}, {% endif %}{% endfor %}</p>{% endif %}
 
-        <hr>
+    <hr>
 
-        {{ content }}
-    </div>
+    {{ content }}
     {% if page.files.size > 0 %}
-    <div class="col-lg-4 col-sm-6 col-xs-12">
-        <div class="panel-group" id="project-file-accordion" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab">
-                    <h4 class="panel-title">Files</h4>
-                </div>
-                <div class="list-group">
-                    {% for file in page.files %}
-                    <a href="{{ site.url }}/downloads/{{ file }}" title="{{ file }}" class="list-group-item project-file-link">{{ file }}</a>
-                    {% endfor %}
+    <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <div class="panel-group" id="project-file-accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+                        <h4 class="panel-title">Files</h4>
+                    </div>
+                    <div class="list-group">
+                        {% for file in page.files %}
+                        <a href="{{ site.url }}/downloads/{{ file }}" title="{{ file }}" class="list-group-item project-file-link">{{ file }}</a>
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
         </div>

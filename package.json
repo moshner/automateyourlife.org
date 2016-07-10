@@ -10,14 +10,16 @@
     "bootstrap-sass": "^3.3.6",
     "glob": "^7.0.5",
     "gulp": "^3.9.1",
-    "gulp-babel": "^6.1.2",
     "gulp-clean": "^0.3.2",
     "gulp-eslint": "^3.0.1",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-htmlmin": "^2.0.0",
     "gulp-jshint": "^2.0.1",
     "gulp-sass": "^2.3.2",
     "gulp-uglify": "^1.5.4",
     "through2": "^2.0.1"
   },
-  "scripts": {}
+  "scripts": {
+    "build": "gulp"
+  }
 }

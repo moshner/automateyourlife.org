@@ -3,11 +3,9 @@
 
 <div class="container">
     {% include post-header.html %}
-    <div class="col-xs-12">
-        {% if page.image != "" %}<img src="{{ site.image_path }}/{{ page.image }}" width="72" height="108" title="project icon">{% endif %}
-        <hr>
-        {{ content }}
-    </div>
+    {% if page.image != "" %}<img src="{{ site.image_path }}/{{ page.image }}" width="72" height="108" title="project icon">{% endif %}
+    <hr>
+    {{ content }}
 </div>
 
 {% include layout/footer.html %}

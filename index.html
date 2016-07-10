@@ -17,19 +17,15 @@ title: ""
 
 <div class="container">
     {% for post in paginator.posts %}
-    <div class="row post-excerpt">
-        <div class="col-xs-12">
-            <p class="text-muted"><small>posted on {{ post.date | date: "%B %d, %Y" }}</small></p>
-            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-            {% if post.author != "" %}
-            {% assign author = site.data.authors[post.author] %}
-            <p class="text-muted"><small>by: {{ author.name }}{% if author.twitter != "" %} (<a href="//twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a> <span class="social-icon social-icon-twitter"></span>){% endif %}</small></p>
-            {% endif %}
-            {{ post.excerpt }}
-        </div>
-        {% if forloop.last != true %}
-        <div class="col-xs-12"><hr></div>
+    <div class="post-excerpt">
+        <p class="text-muted"><small>posted on {{ post.date | date: "%B %d, %Y" }}</small></p>
+        <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+        {% if post.author != "" %}
+        {% assign author = site.data.authors[post.author] %}
+        <p class="text-muted"><small>by: {{ author.name }}{% if author.twitter != "" %} (<a href="//twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a> <span class="social-icon social-icon-twitter"></span>){% endif %}</small></p>
         {% endif %}
+        {{ post.excerpt }}
+        {% if forloop.last != true %}<hr>{% endif %}
     </div>
     {% endfor %}
 </div>
@@ -37,30 +33,30 @@ title: ""
 {% if paginator.total_pages > 1 %}
 <div class="container">
     <nav>
-    <ul class="pagination">
-        {% if paginator.previous_page %}
-        <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a></li>
-        {% else %}
-        <li class="disabled"><span>&laquo;</span></li>
-        {% endif %}
+        <ul class="pagination">
+            {% if paginator.previous_page %}
+            <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a></li>
+            {% else %}
+            <li class="disabled"><span>&laquo;</span></li>
+            {% endif %}
 
-        {% for page in (1..paginator.total_pages) %}
-          {% if page == paginator.page %}
-            <li class="active"><span>{{ page }}</span></li>
-          {% elsif page == 1 %}
-            <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
-          {% else %}
-            <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
-          {% endif %}
-        {% endfor %}
+            {% for page in (1..paginator.total_pages) %}
+              {% if page == paginator.page %}
+                <li class="active"><span>{{ page }}</span></li>
+              {% elsif page == 1 %}
+                <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+              {% else %}
+                <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+              {% endif %}
+            {% endfor %}
 
-        {% if paginator.next_page %}
-          <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
-        {% else %}
-          <li class="disabled"><span>&raquo;</span></li>
-        {% endif %}
-        </li>
-    </ul>
+            {% if paginator.next_page %}
+              <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
+            {% else %}
+              <li class="disabled"><span>&raquo;</span></li>
+            {% endif %}
+            </li>
+        </ul>
     </nav>
 </div>
 {% endif %}
