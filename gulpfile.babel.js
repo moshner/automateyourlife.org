@@ -24,14 +24,15 @@ import uglify from 'gulp-uglify';
     gulp.task('deploy', () => {
         return gulp.src('./dist/**/*')
                 .pipe(ghPages({
-                    origin: "git@github.com:moshner/automateyourlife.org.git"
+                    remoteUrl: "git@github.com:moshner/automateyourlife.org.git"
                 }));
     });
 
     gulp.task('dev-deploy', () => {
         return gulp.src('./dist/**/*')
                 .pipe(ghPages({
-                    origin: "git@github.com:chimericdream/dev.automateyourlife.org.git"
+                    remoteUrl: "git@github.com:chimericdream/dev.automateyourlife.org.git",
+                    origin: "dev"
                 }));
     });
 
