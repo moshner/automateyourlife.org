@@ -13,7 +13,7 @@
 					<Files-type>java.lang.String</Files-type>
 					<collapsekey>&lt;null&gt;</collapsekey>
 					<collapsekey-type>java.lang.String</collapsekey-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>Recipient: IFTTT Maker Faire 
+					<com.twofortyfouram.locale.intent.extra.BLURB>Recipient: IFTTT Maker Faire
 Message: potty=:=%Ptype</com.twofortyfouram.locale.intent.extra.BLURB>
 					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
 					<config_message_recipient_name>&lt;null&gt;</config_message_recipient_name>
