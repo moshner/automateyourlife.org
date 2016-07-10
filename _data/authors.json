@@ -2,11 +2,19 @@
     "nick-mosher": {
         "name": "Nick Mosher",
         "twitter": "moshner",
-        "url": "//nick.mosher.me/"
+        "facebook": "",
+        "github": "moshner",
+        "homepage": "//nick.mosher.me/",
+        "image": true,
+        "bio": "Nick is an Interaction and Experience designer. He creates web sites, intranet platforms, and web applications always with the customer's intuitive and effective use at the forefront of my planning. Currently, he works as a User Experience Designer for the American Academy of Family Physicians. At the AAFP, he works to champion the user experience on websites such as FamilyDoctor.org and AAFP.org."
     },
     "bill-parrott": {
         "name": "Bill Parrott",
         "twitter": "chimericdream",
-        "url": "//chimericdream.com/"
+        "facebook": "chimericdream",
+        "github": "chimericdream",
+        "homepage": "//chimericdream.com/",
+        "image": false,
+        "bio": "BIO!"
     }
 }

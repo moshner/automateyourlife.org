@@ -5835,21 +5835,6 @@ body > footer.navbar {
   bottom: 0;
   width: 100%; }
 
-.navbar-brand > img {
-  display: inline-block;
-  margin-top: -6px; }
-
-.navbar-white {
-  background-color: #fff;
-  border-color: #fff;
-  border-radius: 0; }
-  .navbar-white .navbar-brand-link {
-    color: #4fa1dc;
-    text-decoration: none; }
-  .navbar-white .nav a {
-    color: #4fa1dc;
-    text-decoration: none; }
-
 .mega-image {
   text-align: center; }
 
@@ -5863,19 +5848,54 @@ footer .navbar-text {
 
 .social-icon {
   display: inline-block;
-  height: 16px;
-  width: 16px;
   background-size: cover;
   content: " ";
   overflow: hidden; }
-  .social-icon.social-icon-fb {
-    background-image: url("/assets/images/facebook-32.png"); }
-  .social-icon.social-icon-twitter {
-    background-image: url("/assets/images/twitter-32.png"); }
-  .social-icon.social-icon-tumblr {
-    background-image: url("/assets/images/tumblr-32.png"); }
-  .social-icon.social-icon-reddit {
-    background-image: url("/assets/images/reddit-32.png"); }
+  .social-icon.social-icon-16 {
+    height: 16px;
+    width: 16px; }
+    .social-icon.social-icon-16.social-icon-facebook {
+      background-image: url("/assets/images/facebook-16.png"); }
+    .social-icon.social-icon-16.social-icon-github {
+      background-image: url("/assets/images/github-16.png"); }
+    .social-icon.social-icon-16.social-icon-homepage {
+      background-image: url("/assets/images/homepage-16.png"); }
+    .social-icon.social-icon-16.social-icon-reddit {
+      background-image: url("/assets/images/reddit-16.png"); }
+    .social-icon.social-icon-16.social-icon-twitter {
+      background-image: url("/assets/images/twitter-16.png"); }
+    .social-icon.social-icon-16.social-icon-tumblr {
+      background-image: url("/assets/images/tumblr-16.png"); }
+  .social-icon.social-icon-32 {
+    height: 32px;
+    width: 32px; }
+    .social-icon.social-icon-32.social-icon-facebook {
+      background-image: url("/assets/images/facebook-32.png"); }
+    .social-icon.social-icon-32.social-icon-github {
+      background-image: url("/assets/images/github-32.png"); }
+    .social-icon.social-icon-32.social-icon-homepage {
+      background-image: url("/assets/images/homepage-32.png"); }
+    .social-icon.social-icon-32.social-icon-reddit {
+      background-image: url("/assets/images/reddit-32.png"); }
+    .social-icon.social-icon-32.social-icon-twitter {
+      background-image: url("/assets/images/twitter-32.png"); }
+    .social-icon.social-icon-32.social-icon-tumblr {
+      background-image: url("/assets/images/tumblr-32.png"); }
+  .social-icon.social-icon-64 {
+    height: 64px;
+    width: 64px; }
+    .social-icon.social-icon-64.social-icon-facebook {
+      background-image: url("/assets/images/facebook-64.png"); }
+    .social-icon.social-icon-64.social-icon-github {
+      background-image: url("/assets/images/github-64.png"); }
+    .social-icon.social-icon-64.social-icon-homepage {
+      background-image: url("/assets/images/homepage-64.png"); }
+    .social-icon.social-icon-64.social-icon-reddit {
+      background-image: url("/assets/images/reddit-64.png"); }
+    .social-icon.social-icon-64.social-icon-twitter {
+      background-image: url("/assets/images/twitter-64.png"); }
+    .social-icon.social-icon-64.social-icon-tumblr {
+      background-image: url("/assets/images/tumblr-64.png"); }
 
 #site-nav .nav > li.social .navbar-text {
   color: #fff;
@@ -5890,6 +5910,11 @@ footer .navbar-text {
     height: 20px;
     width: 20px; }
 
+.navbar-white {
+  background-color: #fff;
+  border-color: #fff;
+  border-radius: 0; }
+
 .navbar-blue {
   background-color: #4fa1dc;
   background-image: none;
@@ -5899,8 +5924,16 @@ footer .navbar-text {
   margin-bottom: 0; }
   .navbar-blue .navbar-brand {
     color: #fff; }
+    .navbar-blue .navbar-brand.navbar-brand-icon:hover, .navbar-blue .navbar-brand.navbar-brand-icon:focus {
+      text-decoration: none; }
+    .navbar-blue .navbar-brand:hover, .navbar-blue .navbar-brand:focus {
+      color: #fff;
+      text-decoration: underline; }
   .navbar-blue .navbar-nav > li > a {
     color: #fff; }
+    .navbar-blue .navbar-nav > li > a:hover, .navbar-blue .navbar-nav > li > a:focus {
+      color: #fff;
+      text-decoration: underline; }
 
 .cover-container {
   background-color: #4fa1dc;
@@ -5918,3 +5951,7 @@ footer .navbar-text {
 small .social-icon {
   height: 14px;
   width: 14px; }
+
+.well.well-author {
+  background-color: #e4f1fa;
+  border-radius: 0; }

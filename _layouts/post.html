@@ -6,6 +6,7 @@
     {% if page.image != "" %}<img src="{{ site.image_path }}/{{ page.image }}" width="72" height="108" title="project icon">{% endif %}
     <hr>
     {{ content }}
+    {% include author-bio.html %}
 </div>
 
 {% include layout/footer.html %}
