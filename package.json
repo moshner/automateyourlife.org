@@ -20,6 +20,7 @@
     "through2": "^2.0.1"
   },
   "scripts": {
-    "build": "gulp"
+    "build": "gulp",
+    "build-dev": "gulp dev-site"
   }
 }

@@ -4,7 +4,6 @@ source:      ./src
 destination: ./build-mid
 plugins_dir: ./plugins
 layouts_dir: ./src/_layouts
-data_dir:    ./src/_data
 
 safe:         false
 include:      [".nojekyll", "CNAME"]

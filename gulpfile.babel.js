@@ -25,10 +25,20 @@ import uglify from 'gulp-uglify';
 
     });
 
+    gulp.task('dev-site', ['default', 'clean-dev'], () => {
+        return gulp.src('dist/**/*')
+                .pipe(gulp.dest('_site'));
+    });
+
     gulp.task('css', ['clean-css'], () => {
         return gulp.src('src/assets/sass/*.scss')
                 .pipe(sass())
                 .pipe(gulp.dest('dist/assets/styles'));
+    });
+
+    gulp.task('clean-dev', () => {
+        return gulp.src('_site')
+                .pipe(clean());
     });
 
     gulp.task('fonts', ['clean-fonts'], () => {
