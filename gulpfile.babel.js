@@ -3,10 +3,12 @@
 import gulp from 'gulp';
 import clean from 'gulp-clean';
 import eslint from 'gulp-eslint';
+import fsp from 'fs-promise';
 import ghPages from 'gulp-gh-pages';
 import glob from 'glob';
 import htmlmin from 'gulp-htmlmin';
 import os from 'os';
+import rp from 'request-promise';
 import sass from 'gulp-sass';
 import through from 'through2';
 import uglify from 'gulp-uglify';
@@ -35,7 +37,7 @@ import uglify from 'gulp-uglify';
                 }));
     });
 
-    gulp.task('dev-site', ['default', 'clean-dev'], () => {
+    gulp.task('dev-build', ['default', 'clean-dev'], () => {
         return gulp.src('dist/**/*')
                 .pipe(gulp.dest('_site'));
     });
@@ -84,12 +86,12 @@ import uglify from 'gulp-uglify';
                 .pipe(clean());
     });
 
-    gulp.task('jekyll', (gulpCallBack) => {
+    gulp.task('jekyll', (cb) => {
         var spawn = require('child_process').spawn;
         var jekyll = spawn(jekyll_bin, ['build'], {stdio: 'inherit'});
 
         jekyll.on('exit', (code) => {
-            gulpCallBack(code === 0 ? null : `ERROR: Jekyll process exited with code: ${code}`);
+            cb(code === 0 ? null : `ERROR: Jekyll process exited with code: ${code}`);
         });
     });
 
@@ -103,12 +105,70 @@ import uglify from 'gulp-uglify';
                 .pipe(clean());
     });
 
-    gulp.task('generate-forum-post', () => {
-        glob('src/_posts/*.md', (err, files) => {
+    gulp.task('generate-forum-post', (cb) => {
+        return glob('src/_posts/*.md', (err, files) => {
             files.reverse();
-            console.log(files[0]);
+            processFile(files[0], cb);
         });
     });
+
+    function processFile(file, cb) {
+            let file_name = file.replace('src/_posts/', '');
+            let re = /^(\d{4})-(\d{2})-(\d{2})-(.*)\..{2,3}$/i;
+            let file_attrs = re.exec(file_name);
+
+            var file_contents = '';
+            var author_key = '';
+
+            fsp.readFile(file)
+                    .then((file_buffer) => {
+                        file_contents = file_buffer.toString();
+
+                        let author_re = /^---([\r\n](?:.|\r|\n)*?)author: "([^"]+)"([\r\n](?:.|\r|\n)*?)---$/gm;
+                        author_key = author_re.exec(file_contents)[2];
+
+                        return fsp.readFile('src/_data/authors.json');
+                    })
+                    .then((author_file_buffer) => {
+                        let authors = JSON.parse(author_file_buffer.toString());
+
+                        let title_re = /^---([\r\n](?:.|\r|\n)*?)title: "([^"]+)"([\r\n](?:.|\r|\n)*?)---$/gm;
+                        let title = title_re.exec(file_contents)[2];
+
+                        let permlink_re = /^---([\r\n](?:.|\r|\n)*?)permalink: "([^"]+)"([\r\n](?:.|\r|\n)*?)---$/gm;
+                        let permalink = permlink_re.exec(file_contents);
+
+                        let post_url = 'http://automateyourlife.org';
+
+                        if (permalink === null) {
+                            post_url += `/blog/${file_attrs[1]}/${file_attrs[2]}/${file_attrs[3]}/${file_attrs[4]}/`;
+                        } else {
+                            post_url += permalink[2];
+                        }
+                        return rp({
+                            method: 'POST',
+                            uri: 'http://api.automateyourlife.org/jekyll-to-forum/',
+                            body: {
+                                'post_url': post_url,
+                                'title': title,
+                                'author': authors[author_key]['name']
+                            },
+                            json: true
+                        });
+                    })
+                    .then((resp) => {
+                        let forum_link = resp.forum_link;
+                        let new_contents = file_contents.replace(/^---([\r\n](?:.|\r|\n)*?)---$/gm, '---$1\nforum_link: "' + forum_link + '"\n---');
+                        return fsp.writeFile(file, new_contents);
+                    })
+                    .then(() => {
+                        cb();
+                    })
+                    .catch((err) => {
+                        console.log(err);
+                        cb(err);
+                    });
+    }
 
     /**
      * Based on the `gulp-trimlines` NPM module, with an added option to filter
