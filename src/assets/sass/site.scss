@@ -144,3 +144,7 @@ small .social-icon {
     background-color: lighten($brand-primary, 35%);
     border-radius: 0;
 }
+
+.btn-muted {
+  @include button-variant($btn-muted-color, $btn-muted-bg, $btn-muted-border);
+}
