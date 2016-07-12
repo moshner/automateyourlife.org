@@ -5955,3 +5955,40 @@ small .social-icon {
 .well.well-author {
   background-color: #e4f1fa;
   border-radius: 0; }
+
+.btn-muted {
+  color: #fff;
+  background-color: #777777;
+  border-color: #6a6a6a; }
+  .btn-muted:focus, .btn-muted.focus {
+    color: #fff;
+    background-color: #5e5e5e;
+    border-color: #2b2b2b; }
+  .btn-muted:hover {
+    color: #fff;
+    background-color: #5e5e5e;
+    border-color: #4c4c4c; }
+  .btn-muted:active, .btn-muted.active,
+  .open > .btn-muted.dropdown-toggle {
+    color: #fff;
+    background-color: #5e5e5e;
+    border-color: #4c4c4c; }
+    .btn-muted:active:hover, .btn-muted:active:focus, .btn-muted:active.focus, .btn-muted.active:hover, .btn-muted.active:focus, .btn-muted.active.focus,
+    .open > .btn-muted.dropdown-toggle:hover,
+    .open > .btn-muted.dropdown-toggle:focus,
+    .open > .btn-muted.dropdown-toggle.focus {
+      color: #fff;
+      background-color: #4c4c4c;
+      border-color: #2b2b2b; }
+  .btn-muted:active, .btn-muted.active,
+  .open > .btn-muted.dropdown-toggle {
+    background-image: none; }
+  .btn-muted.disabled:hover, .btn-muted.disabled:focus, .btn-muted.disabled.focus, .btn-muted[disabled]:hover, .btn-muted[disabled]:focus, .btn-muted[disabled].focus,
+  fieldset[disabled] .btn-muted:hover,
+  fieldset[disabled] .btn-muted:focus,
+  fieldset[disabled] .btn-muted.focus {
+    background-color: #777777;
+    border-color: #6a6a6a; }
+  .btn-muted .badge {
+    color: #777777;
+    background-color: #fff; }
