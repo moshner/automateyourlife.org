@@ -21,7 +21,7 @@ import uglify from 'gulp-uglify';
         jekyll_bin = 'jekyll.bat';
     }
 
-    gulp.task('default', ['css', 'fonts', 'html', 'images', 'js']);
+    gulp.task('default', ['css', 'fonts', 'html', 'images', 'js', 'non-html']);
 
     gulp.task('deploy', () => {
         return gulp.src('./dist/**/*')
@@ -65,6 +65,11 @@ import uglify from 'gulp-uglify';
     gulp.task('html', ['jekyll'], () => {
         return gulp.src('build-mid/**/*.html')
                 .pipe(htmlmin({collapseWhitespace: true}))
+                .pipe(gulp.dest('dist'))
+    });
+
+    gulp.task('non-html', ['html'], () => {
+        return gulp.src(['build-mid/.nojekyll', 'build-mid/**/*', '!build-mid/**/*.html'])
                 .pipe(gulp.dest('dist'))
     });
 

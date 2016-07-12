@@ -24,6 +24,8 @@ gems:
   - jekyll-paginate
 
 paginate: 10
+paginate_path: "/blog/page-:num/"
+paginate_tags_path: "/tags/:tag/page-:num/"
 
 defaults:
   - scope:

@@ -7,6 +7,6 @@
     {% endif %}
     {% if page.tags %}
     {% assign tags = page.tags | sort %}
-    <p class="post-tags">{% for tag_id in tags %}{% assign tag = site.data.tags[tag_id] %}<span class="label label-default">{{ tag.text }}</span>{% if forloop.last != true%}&nbsp;{% endif %}{% endfor %}</p>
+    <p class="post-tags">{% for tag_id in tags %}{% assign tag = site.data.tags[tag_id] %}<a href="{{ site.url }}/tags/{{ tag_id }}/" title="View all pages tagged '{{ tag.text }}'"><span class="label label-default">{{ tag.text }}</span></a>{% if forloop.last != true%}&nbsp;{% endif %}{% endfor %}</p>
     {% endif %}
 </div>
