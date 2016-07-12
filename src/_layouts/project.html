@@ -7,8 +7,8 @@
 
     {% if page.overview != "" %}<h3>Overview</h3><p>{{ page.overview }}</p>{% endif %}
 
-    <p><strong>Problem</strong>: {{ page.problem }}</p>
-    <p><strong>Solution</strong>: {{ page.solution }}</p>
+    {% if page.problem != "" %}<p><strong>Problem</strong>: {{ page.problem }}</p>{% endif %}
+    {% if page.solution != "" %}<p><strong>Solution</strong>: {{ page.solution }}</p>{% endif %}
 
     {% if page.requirements %}<h3>Requirements</h3><p>{% for req in page.requirements %}{{ req }}{% if forloop.last != true %}, {% endif %}{% endfor %}</p>{% endif %}
 
