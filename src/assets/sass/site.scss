@@ -9,10 +9,6 @@ body {
     margin: ($navbar-height + 20px) 0;
 }
 
-#jumbotron {
-    margin-top: (-1 * $navbar-height);
-}
-
 body > footer.navbar {
     border-radius: 0;
     border-bottom-width: 0;
@@ -36,26 +32,6 @@ footer .navbar-text {
     text-overflow: ellipsis;
 }
 
-.social-icon {
-    display: inline-block;
-    background-size: cover;
-    content: " ";
-    overflow: hidden;
-
-    @each $size in (16, 32, 64) {
-        &.social-icon-#{$size} {
-            height: #{$size}px;
-            width: #{$size}px;
-
-            @each $icon in (facebook, github, homepage, reddit, twitter, tumblr) {
-                &.social-icon-#{$icon} {
-                    background-image: url("/assets/images/#{$icon}-#{$size}.png");
-                }
-            }
-        }
-    }
-}
-
 #site-nav .nav > li.social {
     .navbar-text {
         color: #fff;
@@ -71,47 +47,6 @@ footer .navbar-text {
         & > span {
             height: $font-size-base;
             width: $font-size-base;
-        }
-    }
-}
-
-.navbar-white {
-    background-color: #fff;
-    border-color: #fff;
-    border-radius: 0;
-}
-
-.navbar-blue {
-    background-color: $brand-primary;
-    background-image: none;
-    box-shadow: none;
-    border-color: $brand-primary;
-    border-radius: 0;
-    margin-bottom: 0;
-
-    .navbar-brand {
-        color: #fff;
-
-        &.navbar-brand-icon {
-            &:hover, &:focus {
-                text-decoration: none;
-            }
-        }
-
-        &:hover, &:focus {
-            color: #fff;
-            text-decoration: underline;
-        }
-    }
-
-    .navbar-nav > li {
-        & > a {
-            color: #fff;
-
-            &:hover, &:focus {
-                color: #fff;
-                text-decoration: underline;
-            }
         }
     }
 }
@@ -133,18 +68,4 @@ footer .navbar-text {
         border-color: $gray-light;
         margin-bottom: 0;
     }
-}
-
-small .social-icon {
-    height: $font-size-mini;
-    width: $font-size-mini;
-}
-
-.well.well-author {
-    background-color: lighten($brand-primary, 35%);
-    border-radius: 0;
-}
-
-.btn-muted {
-  @include button-variant($btn-muted-color, $btn-muted-bg, $btn-muted-border);
 }

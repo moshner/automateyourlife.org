@@ -1,0 +1,269 @@
+// White navbar
+
+.navbar-white {
+  background-color: $navbar-white-bg;
+  border-color: $navbar-white-border;
+
+  .navbar-brand {
+    color: $navbar-white-brand-color;
+    &:hover,
+    &:focus {
+      color: $navbar-white-brand-hover-color;
+      background-color: $navbar-white-brand-hover-bg;
+    }
+  }
+
+  .navbar-text {
+    color: $navbar-white-color;
+  }
+
+  .navbar-nav {
+    > li > a {
+      color: $navbar-white-link-color;
+
+      &:hover,
+      &:focus {
+        color: $navbar-white-link-hover-color;
+        background-color: $navbar-white-link-hover-bg;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-white-link-active-color;
+        background-color: $navbar-white-link-active-bg;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-white-link-disabled-color;
+        background-color: $navbar-white-link-disabled-bg;
+      }
+    }
+  }
+
+  // Darken the responsive nav toggle
+  .navbar-toggle {
+    border-color: $navbar-white-toggle-border-color;
+    &:hover,
+    &:focus {
+      background-color: $navbar-white-toggle-hover-bg;
+    }
+    .icon-bar {
+      background-color: $navbar-white-toggle-icon-bar-bg;
+    }
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+    border-color: darken($navbar-white-bg, 7%);
+  }
+
+  // Dropdowns
+  .navbar-nav {
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: $navbar-white-link-active-bg;
+        color: $navbar-white-link-active-color;
+      }
+    }
+
+    @media (max-width: $grid-float-breakpoint-max) {
+      // Dropdowns get custom display
+      .open .dropdown-menu {
+        > .dropdown-header {
+          border-color: $navbar-white-border;
+        }
+        .divider {
+          background-color: $navbar-white-border;
+        }
+        > li > a {
+          color: $navbar-white-link-color;
+          &:hover,
+          &:focus {
+            color: $navbar-white-link-hover-color;
+            background-color: $navbar-white-link-hover-bg;
+          }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: $navbar-white-link-active-color;
+            background-color: $navbar-white-link-active-bg;
+          }
+        }
+        > .disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            color: $navbar-white-link-disabled-color;
+            background-color: $navbar-white-link-disabled-bg;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-link {
+    color: $navbar-white-link-color;
+    &:hover {
+      color: $navbar-white-link-hover-color;
+    }
+  }
+
+  .btn-link {
+    color: $navbar-white-link-color;
+    &:hover,
+    &:focus {
+      color: $navbar-white-link-hover-color;
+    }
+    &[disabled],
+    fieldset[disabled] & {
+      &:hover,
+      &:focus {
+        color: $navbar-white-link-disabled-color;
+      }
+    }
+  }
+}
+
+// Blue navbar
+
+.navbar-blue {
+  background-color: $navbar-blue-bg;
+  border-color: $navbar-blue-border;
+
+  .navbar-brand {
+    color: $navbar-blue-brand-color;
+    &:hover,
+    &:focus {
+      color: $navbar-blue-brand-hover-color;
+      background-color: $navbar-blue-brand-hover-bg;
+    }
+  }
+
+  .navbar-text {
+    color: $navbar-blue-color;
+  }
+
+  .navbar-nav {
+    > li > a {
+      color: $navbar-blue-link-color;
+
+      &:hover,
+      &:focus {
+        color: $navbar-blue-link-hover-color;
+        background-color: $navbar-blue-link-hover-bg;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-blue-link-active-color;
+        background-color: $navbar-blue-link-active-bg;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-blue-link-disabled-color;
+        background-color: $navbar-blue-link-disabled-bg;
+      }
+    }
+  }
+
+  // Darken the responsive nav toggle
+  .navbar-toggle {
+    border-color: $navbar-blue-toggle-border-color;
+    &:hover,
+    &:focus {
+      background-color: $navbar-blue-toggle-hover-bg;
+    }
+    .icon-bar {
+      background-color: $navbar-blue-toggle-icon-bar-bg;
+    }
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+    border-color: darken($navbar-blue-bg, 7%);
+  }
+
+  // Dropdowns
+  .navbar-nav {
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: $navbar-blue-link-active-bg;
+        color: $navbar-blue-link-active-color;
+      }
+    }
+
+    @media (max-width: $grid-float-breakpoint-max) {
+      // Dropdowns get custom display
+      .open .dropdown-menu {
+        > .dropdown-header {
+          border-color: $navbar-blue-border;
+        }
+        .divider {
+          background-color: $navbar-blue-border;
+        }
+        > li > a {
+          color: $navbar-blue-link-color;
+          &:hover,
+          &:focus {
+            color: $navbar-blue-link-hover-color;
+            background-color: $navbar-blue-link-hover-bg;
+          }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: $navbar-blue-link-active-color;
+            background-color: $navbar-blue-link-active-bg;
+          }
+        }
+        > .disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            color: $navbar-blue-link-disabled-color;
+            background-color: $navbar-blue-link-disabled-bg;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-link {
+    color: $navbar-blue-link-color;
+    &:hover {
+      color: $navbar-blue-link-hover-color;
+    }
+  }
+
+  .btn-link {
+    color: $navbar-blue-link-color;
+    &:hover,
+    &:focus {
+      color: $navbar-blue-link-hover-color;
+    }
+    &[disabled],
+    fieldset[disabled] & {
+      &:hover,
+      &:focus {
+        color: $navbar-blue-link-disabled-color;
+      }
+    }
+  }
+}

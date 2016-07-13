@@ -1,0 +1,3 @@
+.btn-muted {
+  @include button-variant($btn-muted-color, $btn-muted-bg, $btn-muted-border);
+}

@@ -1,0 +1,24 @@
+.social-icon {
+    display: inline-block;
+    background-size: cover;
+    content: " ";
+    overflow: hidden;
+
+    @each $size in (16, 32, 64) {
+        &.social-icon-#{$size} {
+            height: #{$size}px;
+            width: #{$size}px;
+
+            @each $icon in (facebook, github, homepage, reddit, twitter, tumblr) {
+                &.social-icon-#{$icon} {
+                    background-image: url("/assets/images/#{$icon}-#{$size}.png");
+                }
+            }
+        }
+    }
+}
+
+small .social-icon {
+    height: $font-size-mini;
+    width: $font-size-mini;
+}
