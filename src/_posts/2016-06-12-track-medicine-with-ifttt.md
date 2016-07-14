@@ -14,6 +14,8 @@ solution: "Log medicine intake on a spreadsheet right when it is taken."
 overview: "There are a lot of ways to track your medication. You can pay for a digital tracker. You can mark your calendar. You can even just look at your pill container for the day to make sure you took them. None of these solutions are free, easy, long term, or as cool as this solution. Using a Google Spreadsheet and DO by IFTTT on your phone you can quick track each pill and have a history for analysis later!"
 requirements: ["IFTTT", "DO button app for Android or iPhone"]
 files: []
+
+forum_link: "http://forum.automateyourlife.org/d/26"
 ---
 
 Detailed Steps

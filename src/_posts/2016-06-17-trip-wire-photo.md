@@ -13,6 +13,8 @@ solution: ""
 overview: ""
 requirements: ["littleBits", "IFTTT", "Tasker", "AutoRemote"]
 files: ["Hi.tsk.xml"]
+
+forum_link: "http://forum.automateyourlife.org/d/28"
 ---
 
 ## A) Set up the trip wire using littleBits.

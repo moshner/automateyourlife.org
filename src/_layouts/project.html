@@ -5,10 +5,10 @@
     {% include post-header.html %}
     {% if page.image != "" %}<img src="{{ site.image_path }}/{{ page.image }}" width="72" height="108" title="project icon">{% endif %}
 
-    {% if page.overview != "" %}<h3>Overview</h3><p>{{ page.overview }}</p>{% endif %}
+    {% if page.overview != "" %}<h3>Overview</h3><p>{{ page.overview | markdownify }}</p>{% endif %}
 
-    {% if page.problem != "" %}<p><strong>Problem</strong>: {{ page.problem }}</p>{% endif %}
-    {% if page.solution != "" %}<p><strong>Solution</strong>: {{ page.solution }}</p>{% endif %}
+    {% if page.problem != "" %}<p><strong>Problem</strong>: {{ page.problem | markdownify }}</p>{% endif %}
+    {% if page.solution != "" %}<p><strong>Solution</strong>: {{ page.solution | markdownify }}</p>{% endif %}
 
     {% if page.requirements %}<h3>Requirements</h3><p>{% for req in page.requirements %}{{ req }}{% if forloop.last != true %}, {% endif %}{% endfor %}</p>{% endif %}
 
@@ -33,6 +33,7 @@
         </div>
     </div>
     {% endif %}
+    {% include post-footer.html %}
     {% include author-bio.html %}
 </div>
 

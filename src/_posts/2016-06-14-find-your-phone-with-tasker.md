@@ -1,6 +1,6 @@
 ---
 layout: "project"
-permalink: "/projects/mute-android-with-tasker/"
+permalink: "/projects/find-your-phone-with-tasker/"
 category: "projects"
 
 title: "Find Your Phone with Tasker"
@@ -19,6 +19,8 @@ overview: |
      1. From a web browser using Join by joaoapps.
 requirements: []
 files: ["End_Find_Phone.tsk.xml", "Find_Phone.tsk.xml", "Find_Phone_Via_AutoRemote.prf.xml", "Find_Phone_Via_Join.prf.xml"]
+
+forum_link: "http://forum.automateyourlife.org/d/27"
 ---
 
 Set Up the Tasks

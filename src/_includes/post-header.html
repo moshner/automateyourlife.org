@@ -3,7 +3,7 @@
     <h2>{{ page.title }}</h2>
     {% if page.author != "" %}
     {% assign author = site.data.authors[page.author] %}
-    <p class="text-muted">by: {{ author.name }}{% if author.twitter != "" %} (<a href="//twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a> <span class="social-icon social-icon-16 social-icon-twitter"></span>){% endif %}</p>
+    <p class="text-muted">by: {{ author.name }}</p>
     {% endif %}
     {% if page.tags %}
     {% assign tags = page.tags | sort %}

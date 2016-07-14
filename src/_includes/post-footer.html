@@ -1,0 +1,14 @@
+{% if page.forum_link != "" %}
+<div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+        <div class="panel panel-primary text-center">
+            <div class="panel-heading">
+                <h5 class="panel-title">Join the Discussion!</h5>
+            </div>
+            <div class="panel-body">
+                <p><a href="{{ page.forum_link }}">Discuss this {{ page.layout }}</a> in the Automate Your Life forums.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}

@@ -14,6 +14,8 @@ solution: "Using Tasker and your phone you can track sleep, changings, and feedi
 overview: "There are three different goals here but all for the same purpose. Helping sleep deprived parents keep their infant baby on track without needing to buy another device."
 requirements: ["Tasker", "AutoRemote", "IFTTT", "Google Drive"]
 files: ["Baby_Fed.tsk.xml", "Baby_Sleep.tsk.xml", "Baby_Wake.tsk.xml", "Both.tsk.xml", "Pee.tsk.xml", "Poo.tsk.xml", "Potty.tsk.xml", "Potty_Send.tsk.xml"]
+
+forum_link: "http://forum.automateyourlife.org/d/29"
 ---
 
 Part 1) Sleep Tracking

@@ -19,6 +19,8 @@ overview: |
      * On Exit - Unmute phone, all voluems to 5
 requirements: ["Android", "Tasker"]
 files: ["Mute_Phone.tsk.xml", "Unmute.tsk.xml"]
+
+forum_link: "http://forum.automateyourlife.org/d/25"
 ---
 
 Detailed Steps
