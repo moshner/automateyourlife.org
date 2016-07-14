@@ -459,10 +459,10 @@ $navbar-blue-border:                     darken($navbar-blue-bg, 10%);
 
 // Blue navbar links
 $navbar-blue-link-color:                 #fff;
-$navbar-blue-link-hover-color:           $gray;
-$navbar-blue-link-hover-bg:              transparent;
+$navbar-blue-link-hover-color:           #fff;
+$navbar-blue-link-hover-bg:              lighten($navbar-blue-bg, 10%);
 $navbar-blue-link-active-color:          $navbar-blue-link-hover-color;
-$navbar-blue-link-active-bg:             transparent;
+$navbar-blue-link-active-bg:             $navbar-blue-link-hover-bg;
 $navbar-blue-link-disabled-color:        $gray-light;
 $navbar-blue-link-disabled-bg:           transparent;
 

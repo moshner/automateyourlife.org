@@ -29,4 +29,6 @@
 
         <link rel="stylesheet" href="{{ site.style_path }}/site.css">
     </head>
-    <body>
+    {% assign bc_url = page.url %}
+    {% assign bc_url_length = bc_url.length - 1 %}
+    <body class="{% if page.url == "/" %}page--home{% else %}page-{{ bc_url | slice: 0, bc_url_length | replace: '/', '-' }}{% endif %}">

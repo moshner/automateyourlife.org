@@ -32,25 +32,6 @@ footer .navbar-text {
     text-overflow: ellipsis;
 }
 
-#site-nav .nav > li.social {
-    .navbar-text {
-        color: #fff;
-        margin-right: 0;
-    }
-
-    & > a {
-        display: inline-block;
-        padding: (($navbar-height - $font-size-base) / 2) 0;
-        margin-left: $nav-link-padding-horizontal;
-        line-height: $font-size-base;
-
-        & > span {
-            height: $font-size-base;
-            width: $font-size-base;
-        }
-    }
-}
-
 .cover-container {
     background-color: $brand-primary;
     color: #fff;
