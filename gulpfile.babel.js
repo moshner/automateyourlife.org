@@ -26,7 +26,8 @@ import uglify from 'gulp-uglify';
     gulp.task('deploy', () => {
         return gulp.src('./dist/**/*')
                 .pipe(ghPages({
-                    origin: "git@github.com:moshner/automateyourlife.org.git"
+                    origin: "git@github.com:moshner/automateyourlife.org.git",
+                    force: true
                 }));
     });
 
