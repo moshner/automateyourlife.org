@@ -10,7 +10,7 @@ tags: ["alexa", "google home", "siri", "manifesto"]
 excerpt: "A.I. is helpful but passive automation means never having to worry again"
 ---
 
-Home automation devices all are the rage right now. Amazon [link], Apple [link], Google [link], Mycroft [link] are all making hardware in the hopes that you will use their artificial intelligence to make your life easier. From “Okay Google, play some Muse” to “Alexa, tell me a joke” these devices are designed make your life easier by not having to walk to your computer or pull out your phone.
+Home automation devices all are the rage right now. [Amazon](https://www.amazon.com/Amazon-Echo-Bluetooth-Speaker-with-WiFi-Alexa/dp/B00X4WHP5E), [Apple](https://www.apple.com/homepod/), [Google](https://madeby.google.com/home/), [Mycroft](https://mycroft.ai/) are all making hardware in the hopes that you will use their artificial intelligence to make your life easier. From “Okay Google, play some Muse” to “Alexa, tell me a joke” these devices are designed make your life easier by not having to walk to your computer or pull out your phone.
 
 These home AI can do so much for us as personal assistants, like these custom tasks [link]. But there are more things I find myself wishing these wonderful future machines could do for me. I really wish I could offload some of the remembering and worrying that my poor brain gets bogged down with.
 
@@ -24,6 +24,6 @@ We have a button to mute our phones and doorbell whenever our kid goes down for 
 
 Each of these features are useful because they happen passively. I don’t have to have to think to tell an A.I. to remind me or make sure to say a certain key phrase at a certain time. If it is a certain time of night, the alarm is armed automatically.
 
-AutomateYourLife.org is dedicated to people like you and me who want to make sure the garage door gets closed when we leave the house, the front door is locked, the stove is off, and the pets are fed. Each month we will be writing about various ways to make your life easier. Join us by subscribing to our newsletter [link], following our blog posts via rss [link], following us on twitter [link], or following our facebook page [link]. We offer all these messages because we know that everyone has their own preferred method of communication.
+AutomateYourLife.org is dedicated to people like you and me who want to make sure the garage door gets closed when we leave the house, the front door is locked, the stove is off, and the pets are fed. Each month we will be writing about various ways to make your life easier. Join us by subscribing to our [newsletter](https://goo.gl/forms/2hYraNmjkxmfDBS33), following our blog posts via [rss](http://automateyourlife.org/feed.xml), or following our [facebook page](https://www.facebook.com/automatingyourlife/). We offer all these choices because we know that everyone has their own preferred method of communication.
 
 Now we want to hear from you: How have you made your life easier through technology?
