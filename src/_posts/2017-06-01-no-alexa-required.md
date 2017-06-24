@@ -1,6 +1,6 @@
 ---
 layout: "project"
-permalink: "/articles/no-alex-required/"
+permalink: "/articles/no-alexa-required/"
 category: "articles"
 
 title: "No Alexa Required"
