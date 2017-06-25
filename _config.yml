@@ -41,6 +41,7 @@ defaults:
         author: ""
         image: ""
         tags: []
+        forum_link: ""
 
         # Settings applicable to blog posts only
         layout: "post"

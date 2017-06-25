@@ -1,14 +1,8 @@
 ---
-layout: "post"
-category: "articles"
-
 title: "No Alexa Required"
 author: "nick-mosher"
-image: ""
 tags: ["alexa", "google-home", "siri", "manifesto"]
 excerpt: "A.I. is helpful but passive automation means never having to worry again"
-
-forum_link: ""
 ---
 
 Home automation devices all are the rage right now. [Amazon](https://www.amazon.com/Amazon-Echo-Bluetooth-Speaker-with-WiFi-Alexa/dp/B00X4WHP5E), [Apple](https://www.apple.com/homepod/), [Google](https://madeby.google.com/home/), [Mycroft](https://mycroft.ai/) are all making hardware in the hopes that you will use their artificial intelligence to make your life easier. From "Okay Google, play some Muse" to "Alexa, tell me a joke" these devices are designed make your life easier by not having to walk to your computer or pull out your phone.
