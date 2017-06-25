@@ -28,5 +28,17 @@
     },
     "littlebits": {
         "text": "littleBits"
+    },
+    "alexa": {
+        "text": "Alexa"
+    },
+    "google-home": {
+        "text": "Google Home"
+    },
+    "siri": {
+        "text": "Siri"
+    },
+    "manifesto": {
+        "text": "Manifesto"
     }
 }
